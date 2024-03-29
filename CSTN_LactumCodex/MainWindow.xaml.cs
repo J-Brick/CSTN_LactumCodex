@@ -21,9 +21,14 @@ namespace CSTN_LactumCodex
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void LGNButton_Click(object sender, RoutedEventArgs e)
         {
-            test
+
+        }
+
+        private void OCButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
