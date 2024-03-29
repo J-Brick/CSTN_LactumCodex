@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using CSTN_LactumCodex.pages;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -23,7 +24,9 @@ namespace CSTN_LactumCodex
 
         private void LGNButton_Click(object sender, RoutedEventArgs e)
         {
-
+           LoginPage Login = new LoginPage();
+            Login.Show();
+            this.Close();
         }
 
         private void OCButton_Click(object sender, RoutedEventArgs e)

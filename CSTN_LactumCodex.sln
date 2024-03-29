@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSTN_LactumCodex", "CSTN_LactumCodex\CSTN_LactumCodex.csproj", "{776CC8AA-3F17-4F84-B856-AA462EE3896A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSTN_LactumCodex", "CSTN_LactumCodex\CSTN_LactumCodex.csproj", "{776CC8AA-3F17-4F84-B856-AA462EE3896A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
