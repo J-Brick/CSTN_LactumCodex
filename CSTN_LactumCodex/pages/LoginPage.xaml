@@ -9,7 +9,7 @@
     <Grid>
 
         <Button Content="Log-in" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,252,0,0" Click="LoginBTNsubmit_Click"/>
-        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="250"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,136,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+        <TextBox Name="UsernameIPB" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="250"/>
+        <TextBox Name="PasswordIPB" HorizontalAlignment="Center" Margin="0,136,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
     </Grid>
 </Window>

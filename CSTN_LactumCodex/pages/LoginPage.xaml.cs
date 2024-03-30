@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Data;
+using System.Collections;
 
 namespace CSTN_LactumCodex.pages
 {
@@ -19,6 +22,12 @@ namespace CSTN_LactumCodex.pages
     /// </summary>
     public partial class LoginPage : Window
     {
+        
+        //SqlConnection sqlConn = new SqlConnection(@"Data Source=DESKTOP-T0MJ1C2;Initial Catalog=CapstoneDBs;Integrated Security=True;Trust Server Certificate=True");
+        DataTable DataTab = new DataTable();
+        Hashtable HB = new Hashtable();
+        string query;
+
         public LoginPage()
         {
             InitializeComponent();
@@ -28,6 +37,36 @@ namespace CSTN_LactumCodex.pages
         {
 
 
+/*            
+            try
+            {*/
+                /*if(sqlConn.State == ConnectionState.Closed)
+                sqlConn.Open();*/
+                HB.Clear();
+                HB.Add("@AccountUser", UsernameIPB.Text);
+                HB.Add("@AccountPass", PasswordIPB.Text);
+                query = "SELECT * from AccountDetails where UserName = @AccountUser and Password @AccountPass ";
+            DataTab = ExDB.GetDataTable("CapstoneDBs",HB,query);
+
+
+            if (string.IsNullOrWhiteSpace(PasswordIPB.Text) || string.IsNullOrWhiteSpace(UsernameIPB.Text) )
+            {
+
+
+            }
+            else if (DataTab == null || DataTab.Rows.Count != 0) 
+            {
+            
+
+            }
+
+            /*}
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+                throw;
+            }*/
 
         }
     }
