@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="Factions40kSelect" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="55,26,0,0" TextWrapping="Wrap" Text="Imperium of man" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="166"/>
+        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="82,50,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select01" Width="112"/>
+        <TextBlock HorizontalAlignment="Left" Margin="51,93,0,0" TextWrapping="Wrap" Text="Forces of chaos" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="180"/>
+        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="83,113,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select02" Width="112"/>
+        <TextBlock HorizontalAlignment="Left" Margin="41,156,0,0" TextWrapping="Wrap" Text="Orks / Greenskins" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="198"/>
+        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="83,176,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select03" Width="112"/>
+        <TextBlock HorizontalAlignment="Left" Margin="105,219,0,0" TextWrapping="Wrap" Text="Eladar" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="75"/>
+        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="83,243,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select04" Width="112"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,286,0,0" TextWrapping="Wrap" Text="Necrons" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="95"/>
+        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="83,306,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select05" Width="112"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,346,0,0" TextWrapping="Wrap" Text="tyrinids" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="83"/>
+        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="84,366,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select06" Width="113"/>
     </Grid>
 </Window>
