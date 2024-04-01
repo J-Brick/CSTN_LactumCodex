@@ -23,7 +23,6 @@ namespace CSTN_LactumCodex.pages
     public partial class LoginPage : Window
     {
         
-        //SqlConnection sqlConn = new SqlConnection(@"Data Source=DESKTOP-T0MJ1C2;Initial Catalog=CapstoneDBs;Integrated Security=True;Trust Server Certificate=True");
         DataTable DataTab = new DataTable();
         Hashtable HB = new Hashtable();
         string query;
@@ -36,38 +35,32 @@ namespace CSTN_LactumCodex.pages
         private void LoginBTNsubmit_Click(object sender, RoutedEventArgs e)
         {
 
-
-/*            
-            try
-            {*/
-                /*if(sqlConn.State == ConnectionState.Closed)
-                sqlConn.Open();*/
                 HB.Clear();
                 HB.Add("@AccountUser", UsernameIPB.Text);
                 HB.Add("@AccountPass", PasswordIPB.Text);
-                query = "SELECT * from AccountDetails where UserName = @AccountUser and Password @AccountPass ";
+                query = "SELECT * from AccountDetails where UserName = @AccountUser and Password = @AccountPass ";
             DataTab = ExDB.GetDataTable("CapstoneDBs",HB,query);
 
 
-            if (string.IsNullOrWhiteSpace(PasswordIPB.Text) || string.IsNullOrWhiteSpace(UsernameIPB.Text) )
+            if (string.IsNullOrWhiteSpace(PasswordIPB.Text) || string.IsNullOrWhiteSpace(UsernameIPB.Text))
             {
 
+                Checkbox.Background = new SolidColorBrush(Colors.Crimson);
+                Checkbox.Text = "please enter Username or password";
+            }
+            else if (DataTab == null || DataTab.Rows.Count != 0)
+            {
+                WHvariationPage WHV = new WHvariationPage();
+                WHV.Show();
+                this.Hide();
+            }
+            else 
+            {
+
+                Checkbox.Background = new SolidColorBrush(Colors.Crimson);
+                Checkbox.Text = "Username or password is incorrect, try again";
 
             }
-            else if (DataTab == null || DataTab.Rows.Count != 0) 
-            {
-            
-
-            }
-
-            /*}
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-
-                throw;
-            }*/
-
         }
     }
 }

@@ -26,17 +26,23 @@ namespace CSTN_LactumCodex.pages
 
         private void Variation_Select01(object sender, RoutedEventArgs e)
         {
-
+           VariationPages.Factions40kSelect  faction40k = new VariationPages.Factions40kSelect ();
+            faction40k.Show();
+            this.Close();
         }
 
         private void Variation_Select02(object sender, RoutedEventArgs e)
         {
-
+            VariationPages.FactionsAOSSelect FactionAgeofSigmar = new VariationPages.FactionsAOSSelect();
+            FactionAgeofSigmar.Show();
+            this.Close();
         }
 
         private void Variation_Select03(object sender, RoutedEventArgs e)
         {
-
+            VariationPages.FactionsFantasySelect FactionFantasy = new VariationPages.FactionsFantasySelect();
+            FactionFantasy.Show();
+            this.Close();
         }
     }
 }

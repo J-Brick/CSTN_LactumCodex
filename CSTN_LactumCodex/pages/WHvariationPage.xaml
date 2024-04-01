@@ -8,7 +8,7 @@
         Title="WHvariationPage" Height="450" Width="800">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="50,56,0,0" TextWrapping="Wrap" Text="WarHammer:40,000" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light"/>
-        <Button Content="Select Variation" HorizontalAlignment="Left" Margin="90,80,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select01"/>
+        <Button Content="Select VAriation" HorizontalAlignment="Left" Margin="90,80,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select01"/>
         <TextBlock HorizontalAlignment="Left" Margin="50,130,0,0" TextWrapping="Wrap" Text="WarHammer: Age Of Sigmar" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light"/>
         <Button Content="Select Variation" HorizontalAlignment="Left" Margin="90,150,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select02"/>
         <TextBlock HorizontalAlignment="Left" Margin="50,200,0,0" TextWrapping="Wrap" Text="WarHammer: Fantasy" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light"/>
