@@ -65,5 +65,12 @@ namespace CSTN_LactumCodex.pages.VariationPages
             TND.Show();
             this.Hide();
         }
+
+        private void BackBTN(object sender, RoutedEventArgs e)
+        {
+            WHvariationPage WHP = new WHvariationPage ();
+            WHP.Show();
+            this.Close();
+        }
     }
 }

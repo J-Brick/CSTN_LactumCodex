@@ -23,5 +23,12 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
         {
             InitializeComponent();
         }
+
+        private void BackBTN(object sender, RoutedEventArgs e)
+        {
+            Factions40kSelect F40kS = new Factions40kSelect();
+            F40kS.Show();
+            this.Close();
+        }
     }
 }

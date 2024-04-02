@@ -19,5 +19,6 @@
         <Button Content="Select Faction" HorizontalAlignment="Left" Margin="83,306,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select05" Width="112"/>
         <TextBlock HorizontalAlignment="Left" Margin="94,346,0,0" TextWrapping="Wrap" Text="tyrinids" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="83"/>
         <Button Content="Select Faction" HorizontalAlignment="Left" Margin="84,366,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select06" Width="113"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="740,383,0,0" VerticalAlignment="Top" Click="BackBTN" />
     </Grid>
 </Window>

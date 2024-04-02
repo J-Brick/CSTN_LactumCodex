@@ -56,4 +56,4 @@ namespace CSTN_LactumCodex.pages
 }
 
 
-//bout 1hr 45min
+//bout 2hr 20min
