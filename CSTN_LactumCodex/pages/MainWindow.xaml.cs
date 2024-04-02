@@ -31,7 +31,9 @@ namespace CSTN_LactumCodex
 
         private void OCButton_Click(object sender, RoutedEventArgs e)
         {
-
+            WHvariationPage WHV = new WHvariationPage();
+            WHV.Show();
+            this.Hide();
         }
     }
 }

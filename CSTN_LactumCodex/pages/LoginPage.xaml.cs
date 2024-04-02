@@ -50,7 +50,9 @@ namespace CSTN_LactumCodex.pages
             }
             else if (DataTab == null || DataTab.Rows.Count != 0)
             {
-
+                WHvariationPage WHV = new WHvariationPage();
+                WHV.Show();
+                this.Hide();
             }
             else 
             {

@@ -44,6 +44,14 @@ namespace CSTN_LactumCodex.pages
             FactionFantasy.Show();
             this.Close();
         }
+
+        private void BackBTN(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+            mw.Show();
+            this.Close();
+
+        }
     }
 }
 

@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         Title="WHvariationPage" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="50,56,0,0" TextWrapping="Wrap" Text="WarHammer:40,000" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light"/>
-        <Button Content="Select VAriation" HorizontalAlignment="Left" Margin="90,80,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select01"/>
-        <TextBlock HorizontalAlignment="Left" Margin="50,130,0,0" TextWrapping="Wrap" Text="WarHammer: Age Of Sigmar" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light"/>
-        <Button Content="Select Variation" HorizontalAlignment="Left" Margin="90,150,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select02"/>
-        <TextBlock HorizontalAlignment="Left" Margin="50,200,0,0" TextWrapping="Wrap" Text="WarHammer: Fantasy" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light"/>
-        <Button Content="Select Variation" HorizontalAlignment="Left" Margin="90,220,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select03"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,85,0,0" TextWrapping="Wrap" Text="WarHammer:40,000" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Height="28"/>
+        <Button Content="Select Variation" HorizontalAlignment="Left" Margin="82,119,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select01" Height="26"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,191,0,0" TextWrapping="Wrap" Text="WarHammer: Age Of Sigmar" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Height="29"/>
+        <Button Content="Select Variation" HorizontalAlignment="Left" Margin="82,220,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select02" Height="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,291,0,0" TextWrapping="Wrap" Text="WarHammer: Fantasy" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Height="28"/>
+        <Button Content="Select Variation" HorizontalAlignment="Left" Margin="82,319,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select03" Height="25"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="740,383,0,0" VerticalAlignment="Top" Click="BackBTN" />
 
     </Grid>
 </Window>

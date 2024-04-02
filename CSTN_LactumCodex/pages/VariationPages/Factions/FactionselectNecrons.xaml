@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="FactionselectNecrons" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Center" Margin="0,201,0,0" TextWrapping="Wrap" Text="Test Necron" VerticalAlignment="Top"/>
     </Grid>
 </Window>
