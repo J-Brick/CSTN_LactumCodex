@@ -30,5 +30,8 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
             F40kS.Show();
             this.Close();
         }
+
+
+
     }
 }
