@@ -50,7 +50,6 @@ namespace CSTN_LactumCodex.pages
             MainWindow mw = new MainWindow();
             mw.Show();
             this.Close();
-
         }
     }
 }
