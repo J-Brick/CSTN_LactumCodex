@@ -26,43 +26,43 @@ namespace CSTN_LactumCodex.pages.VariationPages
 
         private void Faction_Select01(object sender, RoutedEventArgs e)
         {
-            WHvariationPage WHV = new WHvariationPage();
-            WHV.Show();
+           Factions.FactionpageImperium IOM  = new Factions.FactionpageImperium();
+            IOM.Show();
             this.Hide();
         }
 
         private void Faction_Select02(object sender, RoutedEventArgs e)
         {
-            WHvariationPage WHV = new WHvariationPage();
-            WHV.Show();
+            Factions.FactionpageForcesChaos FOC = new Factions.FactionpageForcesChaos();
+            FOC.Show();
             this.Hide();
         }
 
         private void Faction_Select03(object sender, RoutedEventArgs e)
         {
-            WHvariationPage WHV = new WHvariationPage();
-            WHV.Show();
+            Factions.FactionpageGreenskins ORK = new Factions.FactionpageGreenskins ();
+            ORK.Show();
             this.Hide();
         }
 
         private void Faction_Select04(object sender, RoutedEventArgs e)
         {
-            WHvariationPage WHV = new WHvariationPage();
-            WHV.Show();
+           Factions.FactionpageEldar ELD = new Factions.FactionpageEldar();
+            ELD.Show();
             this.Hide();
         }
 
         private void Faction_Select05(object sender, RoutedEventArgs e)
         {
-            WHvariationPage WHV = new WHvariationPage();
-            WHV.Show();
+            Factions.FactionselectNecrons NEC = new Factions.FactionselectNecrons();
+            NEC.Show();
             this.Hide();
         }
 
         private void Faction_Select06(object sender, RoutedEventArgs e)
         {
-            WHvariationPage WHV = new WHvariationPage();
-            WHV.Show();
+            Factions.FactionselectTyrinids TND = new Factions.FactionselectTyrinids();
+            TND.Show();
             this.Hide();
         }
     }
