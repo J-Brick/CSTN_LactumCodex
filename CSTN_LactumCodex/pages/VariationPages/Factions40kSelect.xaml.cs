@@ -26,32 +26,44 @@ namespace CSTN_LactumCodex.pages.VariationPages
 
         private void Faction_Select01(object sender, RoutedEventArgs e)
         {
-
+            WHvariationPage WHV = new WHvariationPage();
+            WHV.Show();
+            this.Hide();
         }
 
         private void Faction_Select02(object sender, RoutedEventArgs e)
         {
-
+            WHvariationPage WHV = new WHvariationPage();
+            WHV.Show();
+            this.Hide();
         }
 
         private void Faction_Select03(object sender, RoutedEventArgs e)
         {
-
+            WHvariationPage WHV = new WHvariationPage();
+            WHV.Show();
+            this.Hide();
         }
 
         private void Faction_Select04(object sender, RoutedEventArgs e)
         {
-
+            WHvariationPage WHV = new WHvariationPage();
+            WHV.Show();
+            this.Hide();
         }
 
         private void Faction_Select05(object sender, RoutedEventArgs e)
         {
-
+            WHvariationPage WHV = new WHvariationPage();
+            WHV.Show();
+            this.Hide();
         }
 
         private void Faction_Select06(object sender, RoutedEventArgs e)
         {
-
+            WHvariationPage WHV = new WHvariationPage();
+            WHV.Show();
+            this.Hide();
         }
     }
 }
