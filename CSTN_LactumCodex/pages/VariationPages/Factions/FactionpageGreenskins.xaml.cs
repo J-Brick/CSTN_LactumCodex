@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -22,10 +23,10 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
     public partial class FactionpageGreenskins : Window
     {
 
-
         DataTable DataTab = new DataTable();
         Hashtable HB = new Hashtable();
         string query;
+        DataRow rows;
 
         public bool showinfo = true;
 
@@ -40,10 +41,12 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
             F40kS.Show();
             this.Close();
         }
-        /*
+        
         private void infoShow()
         {
+
             HB.Clear();
+
             HB.Add("@FactionNamE", FnBLK.Text);
             HB.Add("@FactionGovernmenT", FgBLK.Text);
             HB.Add("@FactionCurrencY", FcBLK.Text);
@@ -54,20 +57,34 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
             query = "SELECT * from FactionDetails where FactionName = @FactionNamE, FactionGovernment = @FactionGovernmenT, FactionCurrency = @FactionCurrencY, FactionLeaders = @FactionLeaderS, FactionReligion = @FactionReligioN, FactionDeities = @FactionDeitieS, FactionLanguage = @FactionLanguagE";
             DataTab = ExDB.GetDataTable("CapstoneDBs", HB, query);
 
-
-            if (showinfo == true)
-            {
-
-              
+                rows = DataTab.Rows[0];
+             
+                string FacName = (string)rows["FactionName"];
+                string FacGov = (string)rows["FactionGovernment"];
+                string FacCur = (string)rows["FactionCurrency"];
+                string FacLead = (string)rows["FactionLeaders"];
+                string FacRel = (string)rows["FactionReligion"];
+                string FacDeit = (string)rows["FactionDeities"];
+                string FacLang  = (string)rows["FactionLanguage"];
                 
+                FnBLK.Text = FacName;
+                FgBLK.Text = FacGov;
+                FcBLK.Text = FacCur;
+                FlBLK.Text = FacLead;
+                FrBLK.Text = FacRel;
+                FdtyBLK.Text = FacDeit;
+                FaBLk.Text = FacLang;
+
+                ExDB.ExecuteIt("CapstoneDBs", query, HB);
             }
-            else if (showinfo == false)
-            {
-                showinfo = true;
-            }
-           
-            
+
+        public void displayInfo() 
+        {
+                infoShow();
         }
-        */
+
+
+
+        }
     }
-}
+

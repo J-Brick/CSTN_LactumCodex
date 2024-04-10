@@ -19,6 +19,9 @@ namespace CSTN_LactumCodex.pages.VariationPages
     /// </summary>
     public partial class Factions40kSelect : Window
     {
+
+
+
         public Factions40kSelect()
         {
             InitializeComponent();
@@ -42,7 +45,11 @@ namespace CSTN_LactumCodex.pages.VariationPages
         {
             Factions.FactionpageGreenskins ORK = new Factions.FactionpageGreenskins ();
             ORK.Show();
+            ORK.displayInfo();
             this.Hide();
+
+
+
         }
 
         private void Faction_Select04(object sender, RoutedEventArgs e)

@@ -38,7 +38,7 @@ namespace CSTN_LactumCodex.pages
                 HB.Clear();
                 HB.Add("@AccountUser", UsernameIPB.Text);
                 HB.Add("@AccountPass", PasswordIPB.Text);
-                query = "SELECT * from AccountDetails where UserName = @AccountUser and Password = @AccountPass ";
+                query = "SELECT * from AccountDetailsTable where UserName = @AccountUser and Password = @AccountPass ";
             DataTab = ExDB.GetDataTable("CapstoneDBs",HB,query);
 
 
