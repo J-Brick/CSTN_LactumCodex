@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages.Factions"
         mc:Ignorable="d"
-        Title="FactionpageGreenskins" Height="600" Width="800">
+        Title="FactionpageGreenskins" Height="800" Width="800">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="36,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="745,535,0,0" VerticalAlignment="Top" Click="BackBTN" />
