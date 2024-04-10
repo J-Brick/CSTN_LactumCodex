@@ -31,6 +31,7 @@ namespace CSTN_LactumCodex.pages.VariationPages
         {
            Factions.FactionpageImperium IOM  = new Factions.FactionpageImperium();
             IOM.Show();
+            IOM.displayInfo();
             this.Hide();
         }
 
@@ -38,6 +39,7 @@ namespace CSTN_LactumCodex.pages.VariationPages
         {
             Factions.FactionpageForcesChaos FOC = new Factions.FactionpageForcesChaos();
             FOC.Show();
+            FOC.displayInfo();
             this.Hide();
         }
 
@@ -56,6 +58,7 @@ namespace CSTN_LactumCodex.pages.VariationPages
         {
            Factions.FactionpageEldar ELD = new Factions.FactionpageEldar();
             ELD.Show();
+            ELD.displayInfo();
             this.Hide();
         }
 
@@ -63,6 +66,7 @@ namespace CSTN_LactumCodex.pages.VariationPages
         {
             Factions.FactionselectNecrons NEC = new Factions.FactionselectNecrons();
             NEC.Show();
+            NEC.displayInfo();
             this.Hide();
         }
 
@@ -70,6 +74,7 @@ namespace CSTN_LactumCodex.pages.VariationPages
         {
             Factions.FactionselectTyrinids TND = new Factions.FactionselectTyrinids();
             TND.Show();
+            TND.displayInfo();
             this.Hide();
         }
 
