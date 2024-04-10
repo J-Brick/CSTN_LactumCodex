@@ -9,7 +9,7 @@
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="36,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="745,535,0,0" VerticalAlignment="Top" Click="BackBTN" />
-        <TextBlock HorizontalAlignment="Left" Margin="124,23,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FnBLK"/>
+        <TextBlock HorizontalAlignment="Left" Margin="124,23,0,0" TextWrapping="Wrap" Text="orks" VerticalAlignment="Top" Height="63" Width="202" Name="FnBLK"/>
         <Label Content="Faction name:" HorizontalAlignment="Left" Margin="36,18,0,0" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="160,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FgBLK"/>
         <Label Content="Faction Government:" HorizontalAlignment="Left" Margin="36,86,0,0" VerticalAlignment="Top"/>

@@ -54,8 +54,12 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
             HB.Add("@FactionReligioN", FrBLK.Text);
             HB.Add("@FactionDeitieS", FdtyBLK.Text);
             HB.Add("@FactionLanguagE", FaBLk.Text);
-            query = "SELECT * from FactionDetails where FactionName = @FactionNamE, FactionGovernment = @FactionGovernmenT, FactionCurrency = @FactionCurrencY, FactionLeaders = @FactionLeaderS, FactionReligion = @FactionReligioN, FactionDeities = @FactionDeitieS, FactionLanguage = @FactionLanguagE";
+            query = "SELECT * from FactionDetails where FactionName = @FactionNamE";
             DataTab = ExDB.GetDataTable("CapstoneDBs", HB, query);
+
+            //and FactionGovernment = @FactionGovernmenT and FactionCurrency = @FactionCurrencY and FactionLeaders = @FactionLeaderS and FactionReligion = @FactionReligioN and FactionDeities = @FactionDeitieS and FactionLanguage = @FactionLanguagE
+
+            if (DataTab != null && showinfo == true) { }
 
                 rows = DataTab.Rows[0];
              
