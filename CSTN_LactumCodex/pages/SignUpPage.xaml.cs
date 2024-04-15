@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +21,49 @@ namespace CSTN_LactumCodex.pages
     /// </summary>
     public partial class SignUpPage : Window
     {
+
+        Hashtable HB = new Hashtable();
+        DataTable DataTab;
+        string query;
+//        bool AccDeetCheck = true; 
+
         public SignUpPage()
         {
             InitializeComponent();
         }
+
+        private void Acc_Create(object sender, RoutedEventArgs e)
+        {
+            //User Name
+            //Password
+            //Email
+            //First Name
+            //Last Name
+
+            HB.Clear();
+            HB.Add("@UserUser", userUsername.Text);
+            HB.Add("@UserPassword", userPassword.Text);
+            HB.Add("@UserEmail", userEmail.Text);
+            HB.Add("@UserFirstName", userFname.Text);
+            HB.Add("@UserLastName", userLname.Text);
+            query = "Select * from AccountTable where UserName = @AccUser or Email = @Email";
+            DataTab = ExDB.GetDataTable("CapstoneDBs", HB, query);
+
+            if (String.IsNullOrEmpty(userUsername.Text) || String.IsNullOrEmpty(userPassword.Text) || String.IsNullOrEmpty(userEmail.Text) || String.IsNullOrEmpty(userFname.Text) || String.IsNullOrEmpty(userLname.Text))
+            {
+
+
+
+            } else {
+
+                query = "insert into AccountDetailTable (UserName, Password, FirstName, LastName, Email) Values (@UserUser,@UserPassword,@UserFirstName,@UserLastName,@UserEmail)";
+                ExDB.ExecuteIt("CapstoneDBs",query,HB);
+
+                //creates user account in the user Accounts Database
+
+            }
+        
+        }
     }
 }
+  
