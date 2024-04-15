@@ -46,7 +46,7 @@ namespace CSTN_LactumCodex.pages
             HB.Add("@UserEmail", userEmail.Text);
             HB.Add("@UserFirstName", userFname.Text);
             HB.Add("@UserLastName", userLname.Text);
-            query = "Select * from AccountTable where UserName = @AccUser or Email = @Email";
+            query = "Select * from AccountDetailTable where UserName = @UserUser or Email = @UserEmail";
             DataTab = ExDB.GetDataTable("CapstoneDBs", HB, query);
 
             if (String.IsNullOrEmpty(userUsername.Text) || String.IsNullOrEmpty(userPassword.Text) || String.IsNullOrEmpty(userEmail.Text) || String.IsNullOrEmpty(userFname.Text) || String.IsNullOrEmpty(userLname.Text))
@@ -60,6 +60,10 @@ namespace CSTN_LactumCodex.pages
                 ExDB.ExecuteIt("CapstoneDBs",query,HB);
 
                 //creates user account in the user Accounts Database
+
+                LoginPage Login = new LoginPage();
+                Login.Show();
+                this.Close();
 
             }
         

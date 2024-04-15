@@ -9,6 +9,7 @@
     <Grid>
         <TextBlock HorizontalAlignment="Center" Margin="0,111,0,0" TextWrapping="Wrap" Text="Warhammer : Lactum codex" VerticalAlignment="Top"/>
         <Button Content="Log in" HorizontalAlignment="Center" VerticalAlignment="Center" Click="LGNButton_Click"/>
-        <Button Content="Open Codex" HorizontalAlignment="Center" VerticalAlignment="Top" Click="OCButton_Click" Margin="0,254,0,0"/>
+        <Button Content="Open Codex" HorizontalAlignment="Center" VerticalAlignment="Top" Click="OCButton_Click" Margin="0,294,0,0"/>
+        <Button Content="Sign-up" HorizontalAlignment="Center" VerticalAlignment="Top" Click="SgnpButton_Click" Margin="0,253,0,0"/>
     </Grid>
 </Window>

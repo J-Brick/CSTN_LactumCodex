@@ -35,5 +35,12 @@ namespace CSTN_LactumCodex
             WHV.Show();
             this.Hide();
         }
+
+        private void SgnpButton_Click(object sender, RoutedEventArgs e)
+        {
+            SignUpPage SUP = new SignUpPage();
+            SUP.Show();
+            this.Hide();
+        }
     }
 }
