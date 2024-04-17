@@ -17,6 +17,7 @@ namespace CSTN_LactumCodex
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -31,8 +32,8 @@ namespace CSTN_LactumCodex
 
         private void OCButton_Click(object sender, RoutedEventArgs e)
         {
-            WHvariationPage WHV = new WHvariationPage();
-            WHV.Show();
+             MainSelection MS = new MainSelection();
+            MS.Show();
             this.Hide();
         }
 

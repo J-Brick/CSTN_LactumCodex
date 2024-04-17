@@ -27,6 +27,10 @@ namespace CSTN_LactumCodex.pages
         Hashtable HB = new Hashtable();
         string query;
 
+        public Boolean Userlog = false;
+
+        public string CUser;
+
         public LoginPage()
         {
             InitializeComponent();
@@ -41,6 +45,7 @@ namespace CSTN_LactumCodex.pages
                 query = "SELECT * from AccountDetailTable where UserName = @AccountUser and Password = @AccountPass ";
             DataTab = ExDB.GetDataTable("CapstoneDBs",HB,query);
 
+            CUser = UsernameIPB.Text;
 
             if (string.IsNullOrWhiteSpace(PasswordIPB.Text) || string.IsNullOrWhiteSpace(UsernameIPB.Text))
             {
@@ -50,6 +55,11 @@ namespace CSTN_LactumCodex.pages
             }
             else if (DataTab == null || DataTab.Rows.Count != 0)
             {
+
+                Userlog = true;
+                CUser = UsernameIPB.Text;
+
+
                 WHvariationPage WHV = new WHvariationPage();
                 WHV.Show();
                 this.Hide();

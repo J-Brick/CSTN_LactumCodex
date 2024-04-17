@@ -47,8 +47,8 @@ namespace CSTN_LactumCodex.pages
 
         private void BackBTN(object sender, RoutedEventArgs e)
         {
-            MainWindow mw = new MainWindow();
-            mw.Show();
+            MainSelection ms = new MainSelection();
+            ms.Show();
             this.Close();
         }
     }

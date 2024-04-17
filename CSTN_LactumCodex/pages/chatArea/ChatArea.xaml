@@ -1,0 +1,93 @@
+﻿<Window x:Class="CSTN_LactumCodex.pages.chatArea.ChatArea"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSTN_LactumCodex.pages.chatArea" xmlns:modelview="clr-namespace:CSTN_LactumCodex.pages.chatArea.MVVM.ModelView"
+        mc:Ignorable="d"
+       Height="650" Width="1200"
+        Background="#25195f"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode = "CanResizeWithGrip">
+
+    <Window.DataContext>
+        <modelview:MainViewModel/>
+    </Window.DataContext>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.ColumnSpan="2" 
+                Background="#252525"
+                MouseDown="Border_mouseDown"
+                >
+
+            <Grid HorizontalAlignment="Stretch">
+                <Label Name="ChatArea"
+                       Foreground="Gray"
+                       FontWeight="SemiBold"/>
+
+                <StackPanel HorizontalAlignment="Right"
+                            Orientation="Horizontal">
+
+                    <Button Width="20" Height="20"
+                         Content="_"
+                         Background="Transparent"
+                         Foreground="Cornsilk"
+                         FontWeight="Bold"
+                            Click="Min_Click"/>
+
+                    <Button Width="20" Height="20"
+                        Content="▢"
+                        Background="Transparent"
+                        Foreground="Cornsilk"
+                        FontWeight="Bold" Click="Max_Click"/>
+
+                    <Button Width="40" Height="20"
+                            Content="BACK"
+                            Background="Transparent"
+                            Foreground="Cornsilk"
+                            FontWeight="Bold" Click="BackBTN"/>
+
+                </StackPanel>
+                
+            </Grid>
+            
+        </Border>
+
+        <Grid Background="#2E2929"
+              Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition Height="60"/>
+
+            </Grid.RowDefinitions>
+
+            <Label Content="Contributors"
+                   VerticalAlignment="Center"
+                   FontWeight="Medium"
+                   Foreground="Cornsilk"
+                   Margin="8,0,0,0"/>
+
+            <ListView ItemsSource="{Binding Contributors}"
+                      Background="Transparent"
+                      BorderThickness="0"
+                      Grid.Row="1"
+                      ItemContainerStyle="{StaticResource ContactCard}"/>
+
+
+        </Grid>
+        
+        
+    </Grid>
+</Window>

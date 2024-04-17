@@ -4,6 +4,10 @@
              xmlns:local="clr-namespace:CSTN_LactumCodex"
              StartupUri="pages/MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="./pages/chatArea/Theme/contributorCard.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="CSTN_LactumCodex.pages.MainSelection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSTN_LactumCodex.pages"
+        mc:Ignorable="d"
+        Title="MainSelection" Height="450" Width="800">
+    <Grid>
+        <Button Click="InfoPagesBTN" Content="Information/Lore Pags" HorizontalAlignment="Center" Margin="300,110,0,0" VerticalAlignment="Top"/>
+        <Button Click="ChatBTN" Content="Chat Room" HorizontalAlignment="Center" Margin="300,210,0,0" VerticalAlignment="Top"/>
+        <Button Content="on pause" HorizontalAlignment="Center" Margin="300,310,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
