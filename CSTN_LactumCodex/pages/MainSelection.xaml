@@ -10,6 +10,7 @@
         <Button Click="InfoPagesBTN" Content="Information/Lore Pags" HorizontalAlignment="Center" Margin="300,110,0,0" VerticalAlignment="Top"/>
         <Button Click="ChatBTN" Content="Chat Room" HorizontalAlignment="Center" Margin="300,210,0,0" VerticalAlignment="Top"/>
         <Button Content="on pause" HorizontalAlignment="Center" Margin="300,310,0,0" VerticalAlignment="Top"/>
+        <Label Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

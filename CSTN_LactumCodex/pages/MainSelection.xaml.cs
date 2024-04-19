@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSTN_LactumCodex.pages.chatArea;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,8 @@ namespace CSTN_LactumCodex.pages
     /// </summary>
     public partial class MainSelection : Window
     {
+            LoginPage LP = new LoginPage();
+
         public MainSelection()
         {
             InitializeComponent();
@@ -26,10 +29,18 @@ namespace CSTN_LactumCodex.pages
 
         private void ChatBTN(object sender, RoutedEventArgs e)
         {
-            pages.LoginPage LP = new pages.LoginPage();
-            if ( LP.Userlog == false )
+
+            LP.CUser = (string)UsernameLabel.Content;
+
+            if (UsernameLabel.Content == "" || UsernameLabel.Content == null)
             {
                 LP.Show();
+                this.Hide();
+            }
+            else if (UsernameLabel.Content == LP.CUser)
+            {
+            ChatArea chat = new ChatArea();
+                chat.Show();
                 this.Hide();
             }
 

@@ -27,7 +27,7 @@ namespace CSTN_LactumCodex.pages
         Hashtable HB = new Hashtable();
         string query;
 
-        public Boolean Userlog = false;
+//        public Boolean Userlog;
 
         public string CUser;
 
@@ -56,13 +56,15 @@ namespace CSTN_LactumCodex.pages
             else if (DataTab == null || DataTab.Rows.Count != 0)
             {
 
-                Userlog = true;
+                
                 CUser = UsernameIPB.Text;
 
 
-                WHvariationPage WHV = new WHvariationPage();
-                WHV.Show();
+                MainSelection MS = new MainSelection();
+                MS.Show();
                 this.Hide();
+
+                MS.UsernameLabel.Content = CUser;
             }
             else 
             {

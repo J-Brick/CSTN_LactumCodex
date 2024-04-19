@@ -32,7 +32,7 @@
                 >
 
             <Grid HorizontalAlignment="Stretch">
-                <Label Name="ChatArea"
+                <Label Name="Chatarea"
                        Foreground="Gray"
                        FontWeight="SemiBold"/>
 

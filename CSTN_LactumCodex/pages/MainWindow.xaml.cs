@@ -28,6 +28,8 @@ namespace CSTN_LactumCodex
            LoginPage Login = new LoginPage();
             Login.Show();
             this.Close();
+           //Login.Userlog = false;
+
         }
 
         private void OCButton_Click(object sender, RoutedEventArgs e)
