@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Folder Include="pages\chatArea\MVVM\View\" />
-    <Folder Include="pages\chatArea\Core\" />
     <Folder Include="pages\chatArea\Icons\" />
   </ItemGroup>
 

@@ -42,7 +42,10 @@ namespace CSTN_LactumCodex.pages
             ChatArea chat = new ChatArea();
                 chat.Show();
                 this.Hide();
+                chat.CUsername.Content = LP.CUser;
             }
+
+           
 
         }
 

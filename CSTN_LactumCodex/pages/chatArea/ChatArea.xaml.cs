@@ -55,6 +55,8 @@ namespace CSTN_LactumCodex.pages.chatArea
             MainSelection MS = new MainSelection();
             MS.Show();
             this.Hide();
+
+            MS.UsernameLabel.Content = CUsername.Content;
         }
     }
 }
