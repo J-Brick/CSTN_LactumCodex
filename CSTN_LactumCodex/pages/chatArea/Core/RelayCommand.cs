@@ -31,8 +31,7 @@ namespace CSTN_LactumCodex.pages.chatArea.Core
 
         public void Execute(object parameter) 
         {
-            this.Execute(parameter);
+            this.execute(parameter);
         }
-
     }
 }

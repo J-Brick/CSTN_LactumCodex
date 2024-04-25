@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CSTN_LactumCodex.pages.chatArea.MVVM.ModelView
-{
+{ 
     class MainViewModel : ObservableObject
     {
 
@@ -18,7 +18,7 @@ namespace CSTN_LactumCodex.pages.chatArea.MVVM.ModelView
 
         /*commands*/
 
-        RelayCommand SendCommand { get; set; }
+        public RelayCommand SendCommand { get; set; }
         private ContributorModel _selectedContributor;
 
 

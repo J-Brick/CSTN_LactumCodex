@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <Style TargetType="TextBox" x:Key="MessageBox" >
+    <Style TargetType="TextBox" x:Key="MessagingBox" >
         <Setter Property="Foreground" Value="Gray"/>
         <Setter Property="FontWeight" Value="Medium"/>
         <Setter Property="Margin" Value="8"/>
@@ -12,8 +12,10 @@
                     <Border CornerRadius="8" Background="DarkGray" >
 
                         <Grid>
-                            <TextBox VerticalAlignment="Stretch" VerticalContentAlignment="Center"
-                                     HorizontalAlignment="Stretch" x:Name="MessageBox"
+                            <TextBox VerticalAlignment="Stretch"
+                                     VerticalContentAlignment="Center"
+                                     HorizontalAlignment="Stretch" 
+                                     x:Name="MessagingBox"
                                      Background="Transparent"
                                      TextWrapping="Wrap"
                                      BorderThickness="0"
@@ -38,7 +40,7 @@
                                     <Style TargetType="TextBlock">
                                         <Setter Property="Visibility" Value="Collapsed"/>
                                         <Style.Triggers>
-                                            <DataTrigger Binding="{Binding Text, ElementName=MessageBox}"  Value="">
+                                            <DataTrigger Binding="{Binding Text, ElementName=MessagingBox}"  Value="">
                                                 <Setter Property="Visibility" Value="Visible"/>
 
                                             </DataTrigger>

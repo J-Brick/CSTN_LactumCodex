@@ -121,7 +121,6 @@
             <Border>
                 <Grid HorizontalAlignment="Stretch"
                       Margin="8">
-
                     <Label Content="@Username" Foreground="Cornsilk"
                            FontWeight="Bold" Margin="10,0,10,0" VerticalAlignment="Center"/>
 
@@ -130,9 +129,10 @@
 
             <ListView ItemsSource="{Binding SelectedContributor.Messages}"
                       Background="Transparent" 
-                      BorderThickness="0" 
+                      BorderThickness="0"
+                      Grid.Row="1"
                       ItemContainerStyle="{StaticResource Chatitem}"
-                      Margin="10,0,0,10"/>
+                      Margin="8,0,0,8"/>
 
             <Grid Grid.Row="2">
                 <Grid.ColumnDefinitions>
@@ -143,21 +143,22 @@
                 <TextBox Grid.Row="1"
                          Height="50"
                          Text="Message @Username"
-                         Style="{StaticResource MessageBox}"
+                         Style="{StaticResource MessagingBox}"
                          Grid.ColumnSpan="2"/>
 
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Right"
                             Grid.Column="1"
                             Margin="0,0,16,0">
-                    
-                <Button
+
+                    <Button
                     Content="Send"
                     Width="50"
                     Height="30"
                     FontSize="15"
                     RenderOptions.BitmapScalingMode="Fant"
                     Margin="5,5,5,0"/>
+
                 </StackPanel>
 
 
