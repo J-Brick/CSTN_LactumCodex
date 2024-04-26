@@ -7,11 +7,16 @@ using System.Linq;
 using CSTN_LactumCodex.pages.chatArea.Core;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
+using CSTN_LactumCodex.pages.chatArea.DataAccess;
 
 namespace CSTN_LactumCodex.pages.chatArea.MVVM.ModelView
 { 
+
     class MainViewModel : ObservableObject
     {
+
+        FirebaseMessageCon FMC = new FirebaseMessageCon();
 
         public ObservableCollection<MessageModel> Messages { get; set; }
         public ObservableCollection<ContributorModel> Contributors { get; set; }
@@ -46,21 +51,25 @@ namespace CSTN_LactumCodex.pages.chatArea.MVVM.ModelView
         public MainViewModel()
         {
             Messages = new ObservableCollection<MessageModel>();
-            Contributors = new ObservableCollection<ContributorModel>();
-
+            Contributors = new ObservableCollection<ContributorModel>(); 
+            Messages = FMC.CreateList();
+            ContributorModel CM = new ContributorModel();
+            
             SendCommand = new RelayCommand(o => 
             {
                 Messages.Add(new MessageModel
                 {
                     Message = Message,
-                    FirstMess = false
+                    FirstMess = true,
+                    Username= CM.Username
                 });
+                addmessage();
 
-                Message = "";
+            
 
             });
 
-            Messages.Add(new MessageModel
+/*            Messages.Add(new MessageModel
             {
                 Username = "Allison",
                 UsernameColor = "#409aff",
@@ -102,19 +111,29 @@ namespace CSTN_LactumCodex.pages.chatArea.MVVM.ModelView
                 Message = "test",
                 Time = DateTime.Now,
                 IsNativeOrg = true
-            });
+            });*/
 
-            for (int i = 0; i < 5; i++)
-            {
                 Contributors.Add(new ContributorModel {
                 
                     Username = $"Allison",
                     Messages = Messages,
 
                 });
-            }
+
+
+ 
 
         }
+
+        public void addmessage()
+        {
+            foreach(MessageModel message in Messages)
+            {
+               FMC.AddMessage(message);
+            }
+        }
+
+
 
     }
 }
