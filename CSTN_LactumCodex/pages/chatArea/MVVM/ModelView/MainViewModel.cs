@@ -60,8 +60,8 @@ namespace CSTN_LactumCodex.pages.chatArea.MVVM.ModelView
                 Messages.Add(new MessageModel
                 {
                     Message = Message,
-                    FirstMess = true,
-                    Username= CM.Username
+                    FirstMess = false,
+//                    Username= ""
                 });
                 addmessage();
 

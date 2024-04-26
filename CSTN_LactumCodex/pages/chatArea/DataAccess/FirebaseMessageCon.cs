@@ -35,7 +35,7 @@ namespace CSTN_LactumCodex.pages.chatArea.DataAccess
         public ObservableCollection<MessageModel> CreateList()
         {
 
-            FirebaseResponse Resp = _FBclient.Get($"Messages/{}");
+            FirebaseResponse Resp = _FBclient.Get($"Messages/");
 
             string rsp = Resp.Body.ToString();
 
@@ -51,7 +51,7 @@ namespace CSTN_LactumCodex.pages.chatArea.DataAccess
             foreach (var item in json) 
             {
 
-                Lstmessage.Add(item.Value);
+               // Lstmessage.Add(item.Value);
 
             }
             return Lstmessage;
