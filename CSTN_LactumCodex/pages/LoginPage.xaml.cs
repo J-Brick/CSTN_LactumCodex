@@ -74,5 +74,13 @@ namespace CSTN_LactumCodex.pages
 
             }
         }
+
+        private void back_page(object sender, RoutedEventArgs e)
+        {
+
+            MainWindow mw = new MainWindow();
+            this.Hide();
+            mw.Show();
+        }
     }
 }

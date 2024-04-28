@@ -68,6 +68,13 @@ namespace CSTN_LactumCodex.pages
             }
         
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+            this.Hide();
+            mw.Show();
+        }
     }
 }
 //4 hours

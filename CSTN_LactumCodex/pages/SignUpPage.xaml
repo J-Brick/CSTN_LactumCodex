@@ -25,7 +25,7 @@
             </Button.Resources>
         </Button>
         
-        <Button Content="Back" HorizontalAlignment="Left" Margin="730,390,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="50">
+        <Button Content="Back" HorizontalAlignment="Left" Margin="730,390,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="50" Click="Button_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="7"/>
