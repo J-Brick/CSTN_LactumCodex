@@ -6,14 +6,21 @@
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages"
         mc:Ignorable="d"
         Title="LoginPage" Height="450" Width="800">
-    <Grid>
 
-        <Button Content="Log-in" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,252,0,0" Click="LoginBTNsubmit_Click"/>
-        <TextBox Name="UsernameIPB" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Margin="0,126,0,0"/>
-        <TextBox Name="PasswordIPB" HorizontalAlignment="Center" Margin="0,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
-        <TextBlock Name="Checkbox" HorizontalAlignment="Left" Margin="10,408,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <Label Content="Username" HorizontalAlignment="Left" Margin="275,95,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.042,0.248"/>
-        <Label Content="password" HorizontalAlignment="Left" Margin="275,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.042,0.248"/>
+    <Grid Background="#303030">
+
+        <Button Content="Log-in" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,252,0,0" Click="LoginBTNsubmit_Click" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="65">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBox Name="UsernameIPB" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Margin="0,126,0,0" FontFamily="Viner Hand ITC" Background="Gray" Foreground="#0207ff"/>
+        <TextBox Name="PasswordIPB" HorizontalAlignment="Center" Margin="0,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" FontFamily="Viner Hand ITC" Background="Gray" Foreground="#0207ff"/>
+        <TextBlock Name="Checkbox" HorizontalAlignment="Left" Margin="10,408,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+            <Label Content="Username" HorizontalAlignment="Left" Margin="275,95,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.042,0.248" FontFamily="Viner Hand ITC" FontSize="15" Foreground="White"/>
+        <Label Content="password" HorizontalAlignment="Left" Margin="275,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.042,0.248" FontFamily="Viner Hand ITC" FontSize="15"  Foreground="White"/>
 
     </Grid>
 </Window>

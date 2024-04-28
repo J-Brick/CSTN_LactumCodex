@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#303030">
-        <TextBlock HorizontalAlignment="Center" Margin="0,70,0,0" TextWrapping="Wrap" Text="Warhammer : The Lactum codex" VerticalAlignment="Top" FontFamily="Viner Hand ITC" FontSize="30" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,70,0,0" TextWrapping="Wrap" Text="Warhammer : The Lactum codex" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White" FontSize="30"/>
 
         <Button Content="Log in" HorizontalAlignment="Center" VerticalAlignment="Top" Click="LGNButton_Click" Margin="0,200,0,0" Height="25" Width="65" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray" >
             <Button.Resources>
