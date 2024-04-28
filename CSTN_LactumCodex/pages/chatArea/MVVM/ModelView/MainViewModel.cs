@@ -61,7 +61,7 @@ namespace CSTN_LactumCodex.pages.chatArea.MVVM.ModelView
                 {
                     Message = Message,
                     FirstMess = false,
-//                    Username= ""
+                    Username= ""
                 });
                 addmessage();
 

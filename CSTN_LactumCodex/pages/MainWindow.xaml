@@ -6,10 +6,33 @@
         xmlns:local="clr-namespace:CSTN_LactumCodex"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0,111,0,0" TextWrapping="Wrap" Text="Warhammer : Lactum codex" VerticalAlignment="Top"/>
-        <Button Content="Log in" HorizontalAlignment="Center" VerticalAlignment="Center" Click="LGNButton_Click"/>
-        <Button Content="Open Codex" HorizontalAlignment="Center" VerticalAlignment="Top" Click="OCButton_Click" Margin="0,294,0,0"/>
-        <Button Content="Sign-up" HorizontalAlignment="Center" VerticalAlignment="Top" Click="SgnpButton_Click" Margin="0,253,0,0"/>
+    <Grid Background="#303030">
+        <TextBlock HorizontalAlignment="Center" Margin="0,70,0,0" TextWrapping="Wrap" Text="Warhammer : The Lactum codex" VerticalAlignment="Top" FontFamily="Viner Hand ITC" FontSize="30" Foreground="White"/>
+
+        <Button Content="Log in" HorizontalAlignment="Center" VerticalAlignment="Top" Click="LGNButton_Click" Margin="0,200,0,0" Height="25" Width="65" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>        
+            </Button.Resources> 
+        </Button>
+
+        <Button Content="Open Codex" HorizontalAlignment="Center" VerticalAlignment="Top" Click="OCButton_Click" Margin="0,300,0,0" Height="25" Width="95" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Sign-up" HorizontalAlignment="Center" VerticalAlignment="Top" Click="SgnpButton_Click" Margin="0,250,0,0" Height="25" Width="75" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
     </Grid>
 </Window>
