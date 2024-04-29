@@ -21,6 +21,7 @@
         <TextBlock Name="Checkbox" HorizontalAlignment="Left" Margin="10,408,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
             <Label Content="Username" HorizontalAlignment="Left" Margin="272,95,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.042,0.248" FontFamily="Viner Hand ITC" FontSize="15" Foreground="White"/>
         <Label Content="password" HorizontalAlignment="Left" Margin="272,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.042,0.248" FontFamily="Viner Hand ITC" FontSize="15"  Foreground="White"/>
+       
         <Button Content="Back" Click="back_page" HorizontalAlignment="Left" Margin="730,390,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="50">
             <Button.Resources>
                 <Style TargetType="Border">
