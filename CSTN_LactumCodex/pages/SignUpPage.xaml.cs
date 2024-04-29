@@ -75,6 +75,8 @@ namespace CSTN_LactumCodex.pages
             this.Hide();
             mw.Show();
         }
+
+
     }
 }
 //4 hours
