@@ -6,16 +6,48 @@
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages"
         mc:Ignorable="d"
         Title="WHvariationPage" Height="450" Width="800">
-    <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="42,85,0,0" TextWrapping="Wrap" Text="WarHammer:40,000" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Height="28"/>
-        <Button Content="Select Variation" HorizontalAlignment="Left" Margin="82,119,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select01" Height="26"/>
-        <TextBlock HorizontalAlignment="Left" Margin="42,191,0,0" TextWrapping="Wrap" Text="WarHammer: Age Of Sigmar" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Height="29"/>
-        <Button Content="Select Variation" HorizontalAlignment="Left" Margin="82,220,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select02" Height="24"/>
-        <TextBlock HorizontalAlignment="Left" Margin="42,291,0,0" TextWrapping="Wrap" Text="WarHammer: Fantasy" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Height="28"/>
-        <Button Content="Select Variation" HorizontalAlignment="Left" Margin="82,319,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select03" Height="25"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="740,383,0,0" VerticalAlignment="Top" Click="BackBTN" />
-        <Label Name="UsernameLabel" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+    <Grid Background="#303030">
+        <TextBlock HorizontalAlignment="Left" Margin="42,85,0,0" TextWrapping="Wrap" Text="WarHammer:40,000" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Foreground="White"/>
 
+        <Button Content="Select Variation" HorizontalAlignment="Left" Margin="82,119,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Variation_Select01" Height="26" FontSize="15" Foreground="#0207ff" Background="DarkGray"  Width="155">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <TextBlock HorizontalAlignment="Left" Margin="42,191,0,0" TextWrapping="Wrap" Text="WarHammer: Age Of Sigmar" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Height="29" Foreground="White"/>
+
+        <Button Content="Select Variation" HorizontalAlignment="Left" Margin="82,220,0,0" VerticalAlignment="Top"  Click="Variation_Select02" Height="24" FontFamily="Copperplate Gothic Light" FontSize="15" Foreground="#0207ff" Background="DarkGray"  Width="155">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <TextBlock HorizontalAlignment="Left" Margin="42,291,0,0" TextWrapping="Wrap" Text="WarHammer: Fantasy" VerticalAlignment="Top" FontSize="18" FontFamily="Viner Hand ITC" Height="28" Foreground="White"/>
+
+        <Button Content="Select Variation" HorizontalAlignment="Left" Margin="82,319,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Click="Variation_Select03" Height="25" FontSize="15" Foreground="#0207ff" Background="DarkGray"  Width="140">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="Back" HorizontalAlignment="Left" Margin="715,395,0,0" VerticalAlignment="Top" Click="BackBTN" Height="23" FontFamily="Copperplate gothic lite" FontSize="13" Foreground="#0207ff" Background="DarkGray"  Width="70">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        
+      <!--touch username label-->
+        
+        <Label Name="UsernameLabel" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
