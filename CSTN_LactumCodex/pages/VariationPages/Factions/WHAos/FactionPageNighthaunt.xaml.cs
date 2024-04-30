@@ -26,8 +26,8 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions.WHAos
 
         private void BackBTN(object sender, RoutedEventArgs e)
         {
-            Factions40kSelect F40kS = new Factions40kSelect();
-            F40kS.Show();
+            FactionsAOSSelect FAOSS = new FactionsAOSSelect();
+            FAOSS.Show();
             this.Close();
         }
     }

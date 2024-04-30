@@ -17,9 +17,9 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions.WHFant
     /// <summary>
     /// Interaction logic for FactionPageGreenskins.xaml
     /// </summary>
-    public partial class FactionPageGreenskins : Window
+    public partial class FactionPageSigGreenskins : Window
     {
-        public FactionPageGreenskins()
+        public FactionPageSigGreenskins()
         {
             InitializeComponent();
         }

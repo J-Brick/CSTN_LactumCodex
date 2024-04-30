@@ -23,5 +23,12 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions.WHAos
         {
             InitializeComponent();
         }
+
+        private void BackBTN(object sender, RoutedEventArgs e)
+        {
+            FactionsAOSSelect FAOSS = new FactionsAOSSelect();
+            FAOSS.Show();
+            this.Close();
+        }
     }
 }

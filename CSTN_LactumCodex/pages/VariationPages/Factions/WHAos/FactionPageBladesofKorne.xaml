@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages.Factions.WHAos"
         mc:Ignorable="d"
-        Title="FactionPageBladesofKorne" Height="450" Width="800">
+        Title="FactionPageBladesofKorne" Height="650" Width="800">
     <Grid>
-        
+
+
+        <TextBlock HorizontalAlignment="Left" Margin="36,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="745,535,0,0" VerticalAlignment="Top" Click="BackBTN" />
+        <TextBlock HorizontalAlignment="Left" Margin="124,23,0,0" TextWrapping="Wrap" Text="Blades of Korne" VerticalAlignment="Top" Height="63" Width="202" x:Name="FnBLK"/>
+        <Label Content="Faction name:" HorizontalAlignment="Left" Margin="36,18,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="160,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FgBLK"/>
+        <Label Content="Faction Government:" HorizontalAlignment="Left" Margin="36,86,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="160,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FcBLK"/>
+        <Label Content="Faction Currency:" HorizontalAlignment="Left" Margin="45,160,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="156,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FlBLK"/>
+        <Label Content="Faction Leaders:" HorizontalAlignment="Left" Margin="45,229,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="160,458,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FaBLk"/>
+        <Label Content="Faction language:" HorizontalAlignment="Left" Margin="52,453,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="160,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FdtyBLK"/>
+        <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="63,377,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="160,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FrBLK"/>
+        <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="56,297,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
