@@ -9,7 +9,13 @@
     <Grid Background="#4B213C">
         <Label Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
 
-        <Button Content="Back" HorizontalAlignment="Left" Margin="744,608,0,0" VerticalAlignment="Top" Click="BackBTN" FontFamily="Copperplate Gothic Light" />
+        <Button Content="Back" HorizontalAlignment="Left" Margin="744,608,0,0" VerticalAlignment="Top" Click="BackBTN" FontFamily="Copperplate Gothic Light" Foreground="#0207ff" Background="DarkGray" Width="50">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         <TextBlock HorizontalAlignment="Left" Margin="148,23,0,0" TextWrapping="Wrap" Text="Tyranids" VerticalAlignment="Top" Height="63" Width="202" Name="FnBLK" Foreground="#E3dac9" FontFamily="Copperplate Gothic Light" />
         <Label Content="Faction name:" HorizontalAlignment="Left" Margin="36,18,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9"/>
         <TextBlock HorizontalAlignment="Left" Margin="188,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FgBLK" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" />
@@ -24,5 +30,11 @@
         <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="63,377,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9"/>
         <TextBlock HorizontalAlignment="Left" Margin="188,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FrBLK" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9"/>
         <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="56,297,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9"/>
+
+        <Image Name="ELDguy" Source="\pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr1.jpg" Height="130" Width="230" Margin="542,33,28,621"/>
+        <Image Name="ELDplace" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr2.jpg" Height="250" Width="230" Margin="515,209,55,325"/>
+        <Image Name="ELDtitan" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr3.jpg" Height="250" Width="230" Margin="492,504,78,30"/>
+        <Image Name="shooting" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr4.jpg" Height="230" Width="400" Margin="45,534,355,20"/>
+
     </Grid>
 </Window>

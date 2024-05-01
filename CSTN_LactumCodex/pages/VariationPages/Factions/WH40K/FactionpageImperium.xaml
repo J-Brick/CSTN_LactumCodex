@@ -25,6 +25,12 @@
         <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="63,377,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="160,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="250" Name="FrBLK" FontFamily="Copperplate Gothic Light" Foreground="Gold" FontSize="16"/>
         <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="56,297,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+
+        <Image Name="ELDguy" Source="\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp1.jpg" Height="130" Width="230" Margin="557,21,13,633"/>
+        <Image Name="ELDplace" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp2.jpg" Height="250" Width="230" Margin="540,111,30,423"/>
+        <Image Name="ELDtitan" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp3.png" Height="250" Width="230" Margin="419,514,151,20"/>
+        <Image Name="shooting" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp4.jpg" Height="230" Width="400" Margin="-6,534,406,20"/>
+
     </Grid>
 </Window>
     

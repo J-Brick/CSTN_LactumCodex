@@ -10,7 +10,7 @@
     <Grid Background="#002714">
         <Label x:Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
 
-        <Button Content="Back" HorizontalAlignment="Left" Margin="712,704,0,0" VerticalAlignment="Top" Click="BackBTN"  Width="50" FontFamily="Viner Hand ITC" FontSize="13" Foreground="#008925" Background="DarkGray">
+        <Button Content="Back" HorizontalAlignment="Left" Margin="712,704,0,0" VerticalAlignment="Top" Click="BackBTN"  Width="50" FontFamily="Copperplate Gothic Light" FontSize="13" Foreground="#bb2324" Background="DarkGray">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="7"/>
@@ -36,7 +36,7 @@
         <Image Name="orkGuy" Stretch="Fill" Source="\pages\VariationPages\pagesImages\warhammer40k\orks\ork2.jpeg" Height="250" Width="230" Margin="540,175,30,359"/>
         <Image Name="orkPlane" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\orks\ork3.jpeg" Height="230" Width="400" Margin="-6,534,406,20"/>
 
-        <Button Width="90" Height="25" Margin="500,650,0,0" Content="Main Leader" FontFamily="Viner Hand ITC" FontSize="13" Foreground="#993424" Background="DarkGray">
+        <Button Width="99" Height="25" Margin="500,650,0,0" Content="Main Leader" FontFamily="Copperplate Gothic Light" FontSize="13" Foreground="#bb2324" Background="DarkGray">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="7"/>
