@@ -25,5 +25,11 @@
         <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="63,377,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="160,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FrBLK" FontFamily="Viner Hand ITC" Foreground="#22bb22"/>
         <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="56,297,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-</Grid>
+
+        <Image Height="100" Width="150" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec1.jpeg" Margin= "400,-450,0,0"/>
+        <Image Height="135" Width="200" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec2.jpeg" Margin="400,330,0,0"/>
+        <Image Height="100" Width="150" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec3.jpeg" Margin= "400,40,0,0"/>
+        <Image Height="100" Width="150" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec4.jpeg" Margin= "400,-200,0,0"/>
+
+    </Grid>
 </Window>

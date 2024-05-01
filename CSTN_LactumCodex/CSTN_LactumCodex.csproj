@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec1.jpeg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec2.jpeg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec3.jpeg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec4.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\ork1.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\ork2.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\ork3.jpeg" />
@@ -34,6 +38,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\necrons\nec1.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\necrons\nec2.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\necrons\nec3.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\necrons\nec4.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\orks\ork1.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
