@@ -17,9 +17,9 @@ namespace CSTN_LactumCodex.pages.GameListPage
     /// <summary>
     /// Interaction logic for GamePageListTwo.xaml
     /// </summary>
-    public partial class GamePageListTwo : Window
+    public partial class PageGameListTwo : Window
     {
-        public GamePageListTwo()
+        public PageGameListTwo()
         {
             InitializeComponent();
         }

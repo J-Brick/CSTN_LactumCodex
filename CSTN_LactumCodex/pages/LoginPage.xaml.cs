@@ -14,6 +14,8 @@ using System.Windows.Shapes;
 using System.Data.SqlClient;
 using System.Data;
 using System.Collections;
+using Firebase.Auth;
+using Firebase.Auth.Providers;
 
 namespace CSTN_LactumCodex.pages
 {
@@ -26,17 +28,28 @@ namespace CSTN_LactumCodex.pages
         DataTable DataTab = new DataTable();
         Hashtable HB = new Hashtable();
         string query;
+        FirebaseAuthConfig FBConfig = new FirebaseAuthConfig();
+        public static FirebaseAuthClient _FBCL;
 
-//        public Boolean Userlog;
+        //        public Boolean Userlog;
 
         public string CUser;
 
         public LoginPage()
         {
+
             InitializeComponent();
+
+            FBConfig.AuthDomain = "lactum-codex.web.app";
+            FBConfig.ApiKey = "AIzaSyCUSGaC3ijY7SYc6HoOajvlL9XQQpS1R5M";
+            FBConfig.Providers = new FirebaseAuthProvider[]
+             {
+             new EmailProvider()
+             };
+
         }
 
-        private void LoginBTNsubmit_Click(object sender, RoutedEventArgs e)
+        private async void LoginBTNsubmit_Click(object sender, RoutedEventArgs e)
         {
 
                 HB.Clear();
@@ -56,9 +69,20 @@ namespace CSTN_LactumCodex.pages
             else if (DataTab == null || DataTab.Rows.Count != 0)
             {
 
-                
-                CUser = UsernameIPB.Text;
 
+                _FBCL = new FirebaseAuthClient(FBConfig);
+
+                try
+                {
+                    await _FBCL.SignInWithEmailAndPasswordAsync(EmailIPB.Text, PasswordIPB.Text);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("invalid input: one of these is incorrect: Email or password", "Login Error", MessageBoxButton.OK);
+                }
+
+
+                CUser = UsernameIPB.Text;
 
                 MainSelection MS = new MainSelection();
                 MS.Show();

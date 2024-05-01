@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\ork1.jpeg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\ork2.jpeg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\ork3.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FirebaseAuthentication.net" Version="4.1.0" />
     <PackageReference Include="FireSharp" Version="2.0.4" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
@@ -25,6 +31,18 @@
   <ItemGroup>
     <Folder Include="pages\chatArea\MVVM\View\" />
     <Folder Include="pages\chatArea\Icons\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\orks\ork1.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\orks\ork2.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\orks\ork3.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

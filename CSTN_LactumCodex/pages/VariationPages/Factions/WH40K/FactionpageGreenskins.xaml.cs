@@ -87,8 +87,11 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
                 infoShow();
         }
 
-
-
+        private void MediaElement_MediaEnded(object sender, RoutedEventArgs e)
+        {
+    /*        OrkSavage.Position = new TimeSpan(0, 0, 1);
+            OrkSavage.Play();*/
         }
+    }
     }
 
