@@ -35,6 +35,10 @@
   <ItemGroup>
     <Folder Include="pages\chatArea\MVVM\View\" />
     <Folder Include="pages\chatArea\Icons\" />
+    <Folder Include="pages\VariationPages\pagesImages\warhammer40k\eldar\" />
+    <Folder Include="pages\VariationPages\pagesImages\warhammer40k\forces chaos\" />
+    <Folder Include="pages\VariationPages\pagesImages\warhammer40k\imperium man\" />
+    <Folder Include="pages\VariationPages\pagesImages\warhammer40k\tyranids\" />
   </ItemGroup>
 
   <ItemGroup>

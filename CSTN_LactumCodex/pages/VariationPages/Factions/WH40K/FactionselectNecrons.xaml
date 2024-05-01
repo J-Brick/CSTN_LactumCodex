@@ -11,20 +11,20 @@
         <Label Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
 
     <Button Content="Back" HorizontalAlignment="Left" Margin="745,535,0,0" VerticalAlignment="Top" Click="BackBTN" />
-        <TextBlock HorizontalAlignment="Left" Margin="124,23,0,0" TextWrapping="Wrap" Text="Necrons" VerticalAlignment="Top" Height="63" Width="202" Name="FnBLK" FontFamily="Viner Hand ITC" Foreground="#22bb22"/>
-        <Label Content="Faction name:" HorizontalAlignment="Left" Margin="36,18,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FgBLK" FontFamily="Viner Hand ITC" Foreground="#22bb22"/>
-        <Label Content="Faction Government:" HorizontalAlignment="Left" Margin="36,86,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FcBLK" FontFamily="Viner Hand ITC" Foreground="#22bb22"/>
-        <Label Content="Faction Currency:" HorizontalAlignment="Left" Margin="45,160,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="156,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FlBLK" FontFamily="Viner Hand ITC" Foreground="#22bb22"/>
-        <Label Content="Faction Leaders:" HorizontalAlignment="Left" Margin="45,229,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,458,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FaBLk" FontFamily="Viner Hand ITC" Foreground="#22bb22"/>
-        <Label Content="Faction language:" HorizontalAlignment="Left" Margin="52,453,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FdtyBLK" FontFamily="Viner Hand ITC" Foreground="#22bb22"/>
-        <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="63,377,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FrBLK" FontFamily="Viner Hand ITC" Foreground="#22bb22"/>
-        <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="56,297,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="138,23,0,0" TextWrapping="Wrap" Text="Necrons" VerticalAlignment="Top" Height="63" Width="202" Name="FnBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+        <Label Content="Faction name:" HorizontalAlignment="Left" Margin="36,18,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="188,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FgBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+        <Label Content="Faction Government:" HorizontalAlignment="Left" Margin="36,86,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="178,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FcBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+        <Label Content="Faction Currency:" HorizontalAlignment="Left" Margin="45,160,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="169,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FlBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+        <Label Content="Faction Leaders:" HorizontalAlignment="Left" Margin="45,229,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="185,458,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FaBLk" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+        <Label Content="Faction language:" HorizontalAlignment="Left" Margin="52,453,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="177,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FdtyBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+        <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="63,377,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="160,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FrBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+        <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="56,297,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
 
         <Image Height="100" Width="150" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec1.jpeg" Margin= "400,-450,0,0"/>
         <Image Height="135" Width="200" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec2.jpeg" Margin="400,330,0,0"/>
