@@ -9,6 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\eldar\eld1.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\eldar\eld2.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\eldar\eld3.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\eldar\eld4.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for1.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for2.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for3.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for4.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp1.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp2.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp3.png" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp4.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec1.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec2.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec3.jpeg" />
@@ -16,6 +28,10 @@
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\ork1.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\ork2.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\ork3.jpeg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr1.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr2.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr3.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr4.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,13 +51,45 @@
   <ItemGroup>
     <Folder Include="pages\chatArea\MVVM\View\" />
     <Folder Include="pages\chatArea\Icons\" />
-    <Folder Include="pages\VariationPages\pagesImages\warhammer40k\eldar\" />
-    <Folder Include="pages\VariationPages\pagesImages\warhammer40k\forces chaos\" />
-    <Folder Include="pages\VariationPages\pagesImages\warhammer40k\imperium man\" />
-    <Folder Include="pages\VariationPages\pagesImages\warhammer40k\tyranids\" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\eldar\eld1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\eldar\eld2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\eldar\eld3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\eldar\eld4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\necrons\nec1.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -61,6 +109,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\orks\ork3.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr4.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
