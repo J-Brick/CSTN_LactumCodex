@@ -61,59 +61,65 @@ namespace CSTN_LactumCodex.pages.chatArea.MVVM.ModelView
                 {
                     Message = Message,
                     FirstMess = false,
-                    Username= ""
+                    Username = FMC.GetUser()
                 });
                 addmessage();
+                Messages = FMC.CreateList();
 
-            
+
 
             });
+            Messages = FMC.CreateList();
 
-/*            Messages.Add(new MessageModel
-            {
-                Username = "Allison",
-                UsernameColor = "#409aff",
-                Message = "test",
-                Time = DateTime.Now,
-                IsNativeOrg = true,
-                FirstMess = true
-            });
 
-            for (int i = 0; i < 3; i++)
-            {
-                Messages.Add(new MessageModel
-                {
-                    Username = "Allison",
-                    UsernameColor = "#409aff",
-                    Message = "test",
-                    Time = DateTime.Now,
-                    IsNativeOrg = true,
-                    FirstMess = true
-                });
-            }
 
-            for (int i = 0; i < 3; i++)
-            {
-                Messages.Add(new MessageModel
-                {
-                    Username = "barry",
-                    UsernameColor = "#409aff",
-                    Message = "test",
-                    Time = DateTime.Now,
-                    IsNativeOrg = true
-                });
-            }
 
-            Messages.Add(new MessageModel
-            {
-                Username = "barry",
-                UsernameColor = "#409aff",
-                Message = "test",
-                Time = DateTime.Now,
-                IsNativeOrg = true
-            });*/
 
-                Contributors.Add(new ContributorModel {
+            /*            Messages.Add(new MessageModel
+                        {
+                            Username = "Allison",
+                            UsernameColor = "#409aff",
+                            Message = "test",
+                            Time = DateTime.Now,
+                            IsNativeOrg = true,
+                            FirstMess = true
+                        });
+
+                        for (int i = 0; i < 3; i++)
+                        {
+                            Messages.Add(new MessageModel
+                            {
+                                Username = "Allison",
+                                UsernameColor = "#409aff",
+                                Message = "test",
+                                Time = DateTime.Now,
+                                IsNativeOrg = true,
+                                FirstMess = true
+                            });
+                        }
+
+                        for (int i = 0; i < 3; i++)
+                        {
+                            Messages.Add(new MessageModel
+                            {
+                                Username = "barry",
+                                UsernameColor = "#409aff",
+                                Message = "test",
+                                Time = DateTime.Now,
+                                IsNativeOrg = true
+                            });
+                        }
+
+                        Messages.Add(new MessageModel
+                        {
+                            Username = "barry",
+                            UsernameColor = "#409aff",
+                            Message = "test",
+                            Time = DateTime.Now,
+                            IsNativeOrg = true
+                        });*/
+
+            Contributors.Add(new ContributorModel {
                 
                     Username = $"Allison",
                     Messages = Messages,

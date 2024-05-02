@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using CSTN_LactumCodex.pages.chatArea.MVVM.Model;
 using FireSharp;
@@ -20,6 +21,8 @@ namespace CSTN_LactumCodex.pages.chatArea.DataAccess
         private const string FirebaseDataUrl = "https://lactum-codex-default-rtdb.firebaseio.com/";
         private readonly FirebaseClient _FBclient;
 
+        
+
         public FirebaseMessageCon()
         {
             _FBclient = new FirebaseClient(Config);
@@ -28,14 +31,14 @@ namespace CSTN_LactumCodex.pages.chatArea.DataAccess
         public async Task AddMessage(MessageModel messageM)
         {
             await _FBclient
-                   .SetAsync($"Messages/{messageM.Username}/{DateTime.Now}" ,messageM);
+                   .SetAsync($"Messages/{GetUser()}" ,messageM);
         }
 
 
         public ObservableCollection<MessageModel> CreateList()
         {
-
-            FirebaseResponse Resp = _FBclient.Get($"Messages/");
+            string test = GetUser();
+            FirebaseResponse Resp = _FBclient.Get($"Messages/"+test);
 
             string rsp = Resp.Body.ToString();
 
@@ -50,9 +53,10 @@ namespace CSTN_LactumCodex.pages.chatArea.DataAccess
 
             foreach (var item in json) 
             {
-
-               // Lstmessage.Add(item.Value);
-
+                MessageModel RecMessage = new MessageModel();
+                dynamic data = JsonObject.Parse(item.Value.ToString());
+                RecMessage.Message = data.Messages;
+                Lstmessage.Add((MessageModel)item.Value);
             }
             return Lstmessage;
         }
@@ -63,6 +67,20 @@ namespace CSTN_LactumCodex.pages.chatArea.DataAccess
             BasePath = FirebaseDataUrl,
 
         };
+
+
+        public string GetUser()
+        {
+
+            if (LoginPage._FBCL.User != null)
+            {
+                return LoginPage._FBCL.User.Info.DisplayName;
+            }
+
+            return "";
+      
+        }
+
 
     }
 }
