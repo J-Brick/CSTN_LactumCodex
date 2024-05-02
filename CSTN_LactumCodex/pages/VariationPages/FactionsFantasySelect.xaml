@@ -5,8 +5,64 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages"
         mc:Ignorable="d"
-        Title="FactionsFantasySelect" Height="450" Width="800">
-    <Grid>
-        <Label Name="UsernameLabel" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        Title="FactionsFantasySelect" Height="460" Width="810">
+    <Grid Background="#303030">
+
+        <TextBlock HorizontalAlignment="Left" Margin="61,53,0,0" TextWrapping="Wrap" Text="The Empire" VerticalAlignment="Top" FontSize="18" FontFamily="Viner Hand ITC" Width="166" Foreground="#8888dd"/>
+        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="78,77,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Click="Faction_Select01" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="67,120,0,0" TextWrapping="Wrap" Text="Dwarves" VerticalAlignment="Top" FontSize="18" FontFamily="Viner Hand ITC" Width="180" Foreground="#8888dd"/>
+        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="79,140,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Click="Faction_Select02"  FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="67,183,0,0" TextWrapping="Wrap" Text="Greenskins" VerticalAlignment="Top" FontSize="18" FontFamily="Viner Hand ITC" Width="198" Foreground="#8888dd"/>
+        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="79,203,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Click="Faction_Select03" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="67,246,0,0" TextWrapping="Wrap" Text="Dark Elves" VerticalAlignment="Top" FontSize="18" FontFamily="Viner Hand ITC" Width="105"  Foreground="#8888dd"/>
+        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="79,270,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Click="Faction_Select04" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="67,313,0,0" TextWrapping="Wrap" Text="Vampire Counts" VerticalAlignment="Top" FontSize="18" FontFamily="Viner Hand ITC" Width="159" Foreground="#8888dd"/>
+        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="79,333,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Click="Faction_Select05"  FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="67,373,0,0" TextWrapping="Wrap" Text="Lizardmen" VerticalAlignment="Top" FontSize="18" FontFamily="Viner Hand ITC" Width="120" Foreground="#8888dd"/>
+        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="80,393,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Click="Faction_Select06"  FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="740,383,0,0" VerticalAlignment="Top" Click="BackBTN" FontSize="15" Foreground="#0207ff" FontFamily="Viner Hand ITC" Background="DarkGray" Width="50">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Name="UsernameLabel" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="#8888dd"/>
     </Grid>
 </Window>

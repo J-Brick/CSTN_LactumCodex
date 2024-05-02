@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages"
         mc:Ignorable="d"
-        Title="WHvariationPage" Height="450" Width="800">
+        Title="WHvariationPage" Height="470" Width="820">
     <Grid Background="#303030">
         <TextBlock HorizontalAlignment="Left" Margin="42,85,0,0" TextWrapping="Wrap" Text="WarHammer:40,000" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Foreground="White"/>
 

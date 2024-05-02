@@ -8,15 +8,15 @@
         Title="SignUpPage" Height="450" Width="800">
     <Grid Background="#303030">
         <TextBlock HorizontalAlignment="Left" Margin="270,90,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBox Name="userUsername" HorizontalAlignment="Center" Margin="0,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="Gray" Foreground="#0207ff"/>
+        <TextBox Name="userUsername" HorizontalAlignment="Center" Margin="0,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="DimGray" Foreground="#0207ff" CaretBrush="White" />
         <TextBlock HorizontalAlignment="Left" Margin="270,130,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBox Name="userPassword" HorizontalAlignment="Center" Margin="0,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="Gray" Foreground="#0207ff"/>
+        <TextBox Name="userPassword" HorizontalAlignment="Center" Margin="0,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="DimGray" Foreground="#0207ff"/>
         <TextBlock HorizontalAlignment="Left" Margin="285,170,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBox Name="userEmail" HorizontalAlignment="Center" Margin="0,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="Gray" Foreground="#0207ff"/>
+        <TextBox Name="userEmail" HorizontalAlignment="Center" Margin="0,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="DimGray" Foreground="#0207ff"/>
         <TextBlock HorizontalAlignment="Left" Margin="270,210,0,0" TextWrapping="Wrap" Text="First name" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBox Name="userFname" HorizontalAlignment="Center" Margin="0,210,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="Gray" Foreground="#0207ff"/>
+        <TextBox Name="userFname" HorizontalAlignment="Center" Margin="0,210,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="DimGray" Foreground="#0207ff"/>
         <TextBlock HorizontalAlignment="Left" Margin="270,250,0,0" TextWrapping="Wrap" Text="Last name" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBox Name="userLname" HorizontalAlignment="Center" Margin="0,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="Gray" Foreground="#0207ff"/>
+        <TextBox Name="userLname" HorizontalAlignment="Center" Margin="0,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="DimGray" Foreground="#0207ff"/>
         <Button Content="Create Account" HorizontalAlignment="Left" Margin="333,287,0,0" VerticalAlignment="Top" Click="Acc_Create" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray"  Width="135">
             <Button.Resources>
                 <Style TargetType="Border">

@@ -51,6 +51,12 @@
   <ItemGroup>
     <Folder Include="pages\chatArea\MVVM\View\" />
     <Folder Include="pages\chatArea\Icons\" />
+    <Folder Include="pages\VariationPages\pagesImages\WarhammerFant\darkelves\" />
+    <Folder Include="pages\VariationPages\pagesImages\WarhammerFant\dwarves\" />
+    <Folder Include="pages\VariationPages\pagesImages\WarhammerFant\empire\" />
+    <Folder Include="pages\VariationPages\pagesImages\WarhammerFant\greenskin\" />
+    <Folder Include="pages\VariationPages\pagesImages\WarhammerFant\lizardmen\" />
+    <Folder Include="pages\VariationPages\pagesImages\WarhammerFant\vampireCounts\" />
   </ItemGroup>
 
   <ItemGroup>

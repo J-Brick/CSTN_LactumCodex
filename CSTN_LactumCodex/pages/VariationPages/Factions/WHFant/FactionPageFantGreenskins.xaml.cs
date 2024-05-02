@@ -17,9 +17,9 @@ using System.Windows.Shapes;
 namespace CSTN_LactumCodex.pages.VariationPages.Factions.WHFant
 {
     /// <summary>
-    /// Interaction logic for FactionPageDwarves.xaml
+    /// Interaction logic for FactionPageGreenskins.xaml
     /// </summary>
-    public partial class FactionPageDwarves : Window
+    public partial class FactionPageFantGreenskins : Window
     {
         DataTable DataTab = new DataTable();
         Hashtable HB = new Hashtable();
@@ -27,7 +27,7 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions.WHFant
         DataRow rows;
 
         public bool showinfo = true;
-        public FactionPageDwarves()
+        public FactionPageFantGreenskins()
         {
             InitializeComponent();
         }
