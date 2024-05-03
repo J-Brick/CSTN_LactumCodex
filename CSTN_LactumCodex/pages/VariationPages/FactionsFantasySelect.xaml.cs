@@ -28,6 +28,7 @@ namespace CSTN_LactumCodex.pages.VariationPages
         {
             Factions.WHFant.FactionPageEmpire TE = new Factions.WHFant.FactionPageEmpire();
             this.Hide();
+            TE.displayInfo();
             TE.Show();
 
         }
@@ -36,6 +37,7 @@ namespace CSTN_LactumCodex.pages.VariationPages
         {
             Factions.WHFant.FactionPageDwarves DW = new Factions.WHFant.FactionPageDwarves();
             this.Hide();
+            DW.displayInfo();
             DW.Show();
         }
 
@@ -43,6 +45,7 @@ namespace CSTN_LactumCodex.pages.VariationPages
         {
             Factions.WHFant.FactionPageFantGreenskins FG = new Factions.WHFant.FactionPageFantGreenskins();
             this.Hide();
+            FG.displayInfo();
             FG.Show();
         }
 
@@ -50,6 +53,7 @@ namespace CSTN_LactumCodex.pages.VariationPages
         {
             Factions.WHFant.FactionPageDarkElves DE = new Factions.WHFant.FactionPageDarkElves();
             this.Hide();
+            DE.displayInfo();
             DE.Show();
         }
 
@@ -57,6 +61,7 @@ namespace CSTN_LactumCodex.pages.VariationPages
         {
             Factions.WHFant.FactionPageVampireCounts VC = new Factions.WHFant.FactionPageVampireCounts();
             this.Hide();
+            VC.displayInfo();
             VC.Show();
         }
 
@@ -64,6 +69,7 @@ namespace CSTN_LactumCodex.pages.VariationPages
         {
             Factions.WHFant.FactionPageLizardMen LM = new Factions.WHFant.FactionPageLizardMen();
             this.Hide();
+            LM.displayInfo();
             LM.Show();
         }
 
