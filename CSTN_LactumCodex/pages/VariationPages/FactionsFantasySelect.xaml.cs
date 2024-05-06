@@ -51,7 +51,7 @@ namespace CSTN_LactumCodex.pages.VariationPages
 
         private void Faction_Select04(object sender, RoutedEventArgs e)
         {
-            Factions.WHFant.FactionPageDarkElves DE = new Factions.WHFant.FactionPageDarkElves();
+            Factions.WHFant.FactionPageWoodElves DE = new Factions.WHFant.FactionPageWoodElves();
             this.Hide();
             DE.displayInfo();
             DE.Show();

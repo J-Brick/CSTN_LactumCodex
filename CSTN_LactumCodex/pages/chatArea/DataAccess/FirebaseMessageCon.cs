@@ -11,6 +11,7 @@ using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 
 namespace CSTN_LactumCodex.pages.chatArea.DataAccess
@@ -53,11 +54,12 @@ namespace CSTN_LactumCodex.pages.chatArea.DataAccess
 
             foreach (var item in json) 
             {
-                MessageModel RecMessage = new MessageModel();
-                dynamic data = JsonObject.Parse(item.Value.ToString());
-                //JObject.Parse(json)["id"].ToString()
-                RecMessage.Message = data.Messages;
-                Lstmessage.Add((MessageModel)item.Value);
+//                MessageModel RecMessage = new MessageModel();
+//                dynamic data = JObject.Parse((string)item.Value)["id"].ToString();
+
+                    /*JsonObject.Parse(item.Value.ToString());*/
+//                 RecMessage.Message = data.Messages;
+//                Lstmessage.Add((MessageModel)item.Value);
             }
             return Lstmessage;
         }

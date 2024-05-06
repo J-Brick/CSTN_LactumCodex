@@ -33,9 +33,10 @@
         <Label Content="Faction language:" HorizontalAlignment="Left" Margin="52,553,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
 
 
-        <Image Name="Orkmech"  Height="130" Width="230" Margin="557,21,13,633"/>
-        <Image Name="orkGuy"  Stretch="Fill"  Height="250" Width="230" Margin="540,175,30,359"/>
-        <Image Name="orkPlane"  Stretch="Uniform" Margin="10,631,513,20"/>
+        <Image Name="Orkmech" Source="\pages\VariationPages\pagesImages\WarhammerFant\empire\empire1.jpg" Height="130" Width="230" Margin="557,21,13,633"/>
+        <Image Name="orkGuy" Source="\pages\VariationPages\pagesImages\WarhammerFant\empire\empire2.jpg" Stretch="Fill"  Height="250" Width="230" Margin="540,175,30,359"/>
+        <Image Name="orkPlane" Source="\pages\VariationPages\pagesImages\WarhammerFant\empire\empire3.jpg" Stretch="Uniform" Margin="10,631,513,20"/>
+        <Image Name="Dwarf" Source="\pages\VariationPages\pagesImages\WarhammerFant\empire\empire4.jpg" Stretch="Uniform" Height="200" Width="130" Margin="590,445,80,139" />
 
         <Button Width="99" Height="25" Margin="500,650,0,0" Content="Main Leader" FontFamily="Viner Hand ITC" FontSize="13" Foreground="gold" Background="Gray">
             <Button.Resources>
