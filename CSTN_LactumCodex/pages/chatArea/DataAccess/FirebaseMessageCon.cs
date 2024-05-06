@@ -53,10 +53,11 @@ namespace CSTN_LactumCodex.pages.chatArea.DataAccess
 
             foreach (var item in json) 
             {
-/*                MessageModel RecMessage = new MessageModel();
+                MessageModel RecMessage = new MessageModel();
                 dynamic data = JsonObject.Parse(item.Value.ToString());
+                //JObject.Parse(json)["id"].ToString()
                 RecMessage.Message = data.Messages;
-                Lstmessage.Add((MessageModel)item.Value);*/
+                Lstmessage.Add((MessageModel)item.Value);
             }
             return Lstmessage;
         }

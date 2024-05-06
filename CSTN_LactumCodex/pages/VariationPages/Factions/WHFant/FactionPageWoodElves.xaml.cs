@@ -19,7 +19,7 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions.WHFant
     /// <summary>
     /// Interaction logic for FactionPageDarkElves.xaml
     /// </summary>
-    public partial class FactionPageDarkElves : Window
+    public partial class FactionPageWoodElves : Window
     {
         DataTable DataTab = new DataTable();
         Hashtable HB = new Hashtable();
@@ -28,7 +28,7 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions.WHFant
 
         public bool showinfo = true;
 
-        public FactionPageDarkElves()
+        public FactionPageWoodElves()
         {
             InitializeComponent();
         }

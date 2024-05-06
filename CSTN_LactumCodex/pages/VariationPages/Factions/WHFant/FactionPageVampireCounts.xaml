@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages.Factions.WHFant"
         mc:Ignorable="d"
         Title="FactionSelectVampireCounts" Height="800" Width="800">
-    <Grid Background="#002714">
+    <Grid Background="#202020">
         <Label x:Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
 
         <Button Content="Back" HorizontalAlignment="Left" Margin="712,730,0,0" VerticalAlignment="Top" Click="BackBTN"  Width="50" FontFamily="Viner Hand ITC" FontSize="13" Foreground="#bb2324" Background="DarkGray">

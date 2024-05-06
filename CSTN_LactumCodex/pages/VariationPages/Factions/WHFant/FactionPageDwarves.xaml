@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages.Factions.WHFant"
         mc:Ignorable="d"
         Title="FactionPageDwarves" Height="800" Width="800">
-    <Grid Background="#002714">
+    <Grid Background="#001449">
         <Label x:Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
 
-        <Button Content="Back" HorizontalAlignment="Left" Margin="712,730,0,0" VerticalAlignment="Top" Click="BackBTN"  Width="50" FontFamily="Viner Hand ITC" FontSize="13" Foreground="#bb2324" Background="DarkGray">
+        <Button Content="Back" HorizontalAlignment="Left" Margin="712,730,0,0" VerticalAlignment="Top" Click="BackBTN"  Width="50" FontFamily="Viner Hand ITC" FontSize="13" Foreground="#" Background="Gray">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="7"/>
@@ -35,7 +35,7 @@
         <Image Name="orkGuy" Stretch="Fill"  Height="250" Width="230" Margin="540,175,30,359"/>
         <Image Name="orkPlane" Stretch="Uniform"  Height="230" Width="400" Margin="-6,534,406,20"/>
 
-        <Button Width="99" Height="25" Margin="500,650,0,0" Content="Main Leader" FontFamily="Viner Hand ITC" FontSize="13" Foreground="#bb2324" Background="DarkGray">
+        <Button Width="99" Height="25" Margin="500,650,0,0" Content="Main Leader" FontFamily="Viner Hand ITC" FontSize="13" Foreground="#bbbb24" Background="DarkGray">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="7"/>
