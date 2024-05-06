@@ -31,12 +31,12 @@
         <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="63,377,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="160,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FrBLK" FontFamily="Viner Hand ITC" Foreground="#bb5300" FontSize="14"/>
         <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="56,297,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White" FontSize="14"/>
-        <Image Name="Orkmech" Source="\pages\VariationPages\pagesImages\WarhammerFant\greenskin\greenskins1.jpg" Height="130" Width="230" Margin="540,21,30,633"/>
-        <Image Name="orkGuy" Source="\pages\VariationPages\pagesImages\WarhammerFant\greenskin\greenskins3.jpg" Stretch="Uniform"  Height="250" Width="230" Margin="540,175,30,359"/>
-        <Image Name="orkPlane" Source="\pages\VariationPages\pagesImages\WarhammerFant\greenskin\greenskins2.jpg" Stretch="Uniform"  Height="230" Width="400" Margin="15,524,385,30"/>
-        <Image Name="Orkech" Source="\pages\VariationPages\pagesImages\WarhammerFant\greenskin\greenskins4.jpg" Margin="466,456,30,135"/>
+        <Image Name="Orkmech" Source="\pages\VariationPages\pagesImages\WarhammerFant\woodelves\welves1.avif" Height="130" Width="230" Margin="540,21,30,633"/>
+        <Image Name="orkGuy" Source="\pages\VariationPages\pagesImages\WarhammerFant\woodelves\welves.jpg" Stretch="Uniform"  Height="250" Width="230" Margin="540,175,30,359"/>
+        <Image Name="orkPlane" Source="\pages\VariationPages\pagesImages\WarhammerFant\woodelves\welves3.jpg" Stretch="Uniform"  Height="230" Width="400" Margin="15,524,385,30"/>
+        <Image Name="Orkech" Source="\pages\VariationPages\pagesImages\WarhammerFant\woodelves\welves2.jpg" Margin="466,456,30,135"/>
 
-        <Button Width="99" Height="25" Margin="500,650,0,0" Content="Main Leader" FontFamily="Viner Hand ITC" FontSize="13" Foreground="#bb5300" Background="DarkGray">
+        <Button Width="99" Height="25" Margin="500,650,0,0" Content="Main Leader"  FontFamily="Viner Hand ITC" FontSize="13" Foreground="#bb5300" Background="DarkGray">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="7"/>
