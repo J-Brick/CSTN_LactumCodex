@@ -6,6 +6,7 @@ using System.Text;
 using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using CSTN_LactumCodex.pages.chatArea.MVVM.Model;
+using Firebase.Auth;
 using FireSharp;
 using FireSharp.Config;
 using FireSharp.Interfaces;
@@ -51,16 +52,11 @@ namespace CSTN_LactumCodex.pages.chatArea.DataAccess
             {
              return Lstmessage;
             }
-
-            foreach (var item in json) 
-            {
-                MessageModel RecMessage = new MessageModel();
-                dynamic data = JObject.Parse((string)item.Value).ToString();
-
-                //               JsonObject.Parse(item.Value.ToString());
-                RecMessage.Message = data.Messages;
-                Lstmessage.Add((MessageModel)item.Value);
-            }
+            MessageModel recmess=new MessageModel();
+            recmess.Message=json["Message"].ToString();
+            recmess.Time =(DateTime) json["Time"];
+            recmess.Username = json["Username"].ToString();
+            Lstmessage.Add(recmess);
             return Lstmessage;
         }
 
