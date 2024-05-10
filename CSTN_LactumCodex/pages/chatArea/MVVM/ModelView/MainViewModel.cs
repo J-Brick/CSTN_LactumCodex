@@ -60,7 +60,7 @@ namespace CSTN_LactumCodex.pages.chatArea.MVVM.ModelView
                 Messages.Add(new MessageModel
                 {
                     Message = Message,
-                    FirstMess = false,
+/*                    FirstMess = false,*/
                     Username = FMC.GetUser()
                 });
                 addmessage();

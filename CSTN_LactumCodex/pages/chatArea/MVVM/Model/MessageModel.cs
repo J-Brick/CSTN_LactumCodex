@@ -13,8 +13,8 @@ namespace CSTN_LactumCodex.pages.chatArea.MVVM.Model
         //        public string ImageSource { get; set; }
         public string Message { get; set; }
         public DateTime Time { get; set; }
-        public bool IsNativeOrg { get; set; }
-        public bool? FirstMess { get; set; }
+/*        public bool IsNativeOrg { get; set; }
+        public bool? FirstMess { get; set; }*/
 
 
     }

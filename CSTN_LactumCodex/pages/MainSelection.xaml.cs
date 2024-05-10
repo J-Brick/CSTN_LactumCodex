@@ -55,5 +55,13 @@ namespace CSTN_LactumCodex.pages
             WHV.Show();
             this.Hide();
         }
+
+        private void ToProfile(object sender, RoutedEventArgs e)
+        {
+            ProfilePage PFP = new ProfilePage();
+            PFP.Show();
+            PFP.UsernameBX.Content = LP.CUser;
+            this.Hide();
+        }
     }
 }

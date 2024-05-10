@@ -1,0 +1,44 @@
+﻿<Window x:Class="CSTN_LactumCodex.pages.ProfilePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSTN_LactumCodex.pages"
+        mc:Ignorable="d"
+        Title="ProfilePage" Height="195" Width="300">
+    <Grid Background="#303030">
+        <Grid>
+            <Image Source="\pages\VariationPages\pagesImages\placeholder\placeHolderImg.jpeg" HorizontalAlignment="Left" Height="100" Width="100" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Label Name="UsernameBX"  HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top"/>
+            <ComboBox Name="favFaction" HorizontalAlignment="Left" Margin="90,120,0,0" VerticalAlignment="Top" Width="100" Foreground="#505050">
+
+                <ComboBoxItem Content="Favorite Faction"/>
+                <ComboBoxItem Content="Imperium of man"/>
+                <ComboBoxItem Content="Forces of Chaos"/>
+                <ComboBoxItem Content="ORKS"/>
+                <ComboBoxItem Content="Necrons"/>
+                <ComboBoxItem Content="Eldar"/>
+                <ComboBoxItem Content="Tyrinid"/>
+                <ComboBoxItem Content="Empire"/>
+                <ComboBoxItem Content="Dwarves"/>
+                <ComboBoxItem Content="Greenskins"/>
+                <ComboBoxItem Content="Lizardmen"/>
+                <ComboBoxItem Content="Vampire Counts"/>
+                <ComboBoxItem Content="Wood elves"/>
+
+            </ComboBox>
+            <TextBox HorizontalAlignment="Left" Name="Usersname" Margin="115,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Georgia" Foreground="White" Background="Transparent" />
+            <TextBox HorizontalAlignment="Left" Name="LastMessage" Margin="115,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Georgia" Foreground="White" Background="Transparent" />
+            <Button HorizontalAlignment="Left" Content="Change image" FontSize="10" Name="ChangeImage" Margin="10,120,0,0" VerticalAlignment="Top" Height="20" Width="70" FontFamily="Georgia" Foreground="White" Background="Transparent" Click="ChangeImage_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+
+        </Grid>
+
+    </Grid>
+</Window>

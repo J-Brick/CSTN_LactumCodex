@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="pages\VariationPages\pagesImages\placeholder\placeHolderImg.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\eldar\eld1.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\eldar\eld2.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\eldar\eld3.jpg" />
@@ -63,6 +64,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="pages\VariationPages\pagesImages\placeholder\placeHolderImg.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\eldar\eld1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

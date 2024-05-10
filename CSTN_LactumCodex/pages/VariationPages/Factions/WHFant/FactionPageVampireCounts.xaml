@@ -9,7 +9,7 @@
     <Grid Background="#202020">
         <Label x:Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
 
-        <Button Content="Back" HorizontalAlignment="Left" Margin="712,730,0,0" VerticalAlignment="Top" Click="BackBTN"  Width="50" FontFamily="Viner Hand ITC" FontSize="13" Foreground="#bb2324" Background="DarkGray">
+        <Button Content="Back" HorizontalAlignment="Left" Margin="718,705,0,0" VerticalAlignment="Top" Click="BackBTN"  Width="50" FontFamily="Viner Hand ITC" FontSize="13" Foreground="#bb2324" Background="DarkGray">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="7"/>
