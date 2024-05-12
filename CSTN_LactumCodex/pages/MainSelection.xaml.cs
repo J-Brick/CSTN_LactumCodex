@@ -58,10 +58,23 @@ namespace CSTN_LactumCodex.pages
 
         private void ToProfile(object sender, RoutedEventArgs e)
         {
-            ProfilePage PFP = new ProfilePage();
-            PFP.Show();
-            PFP.UsernameBX.Content = LP.CUser;
-            this.Hide();
+
+            LP.CUser = (string)UsernameLabel.Content;
+
+            if (UsernameLabel.Content == "" || UsernameLabel.Content == null)
+            {
+                LP.Show();
+                this.Hide();
+            }
+            else if (UsernameLabel.Content == LP.CUser)
+            {
+
+                ProfilePage PFP = new ProfilePage();
+                PFP.UsernameBX.Content = LP.CUser;
+
+                PFP.Show();
+
+            }
         }
     }
 }

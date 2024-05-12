@@ -22,10 +22,14 @@ namespace CSTN_LactumCodex.pages
     /// </summary>
     public partial class ProfilePage : Window
     {
+        MainSelection ms = new MainSelection();
         public ProfilePage()
         {
             InitializeComponent();
+       
         }
+
+
 
         DataTable DataTab = new DataTable();
         Hashtable HB = new Hashtable();
@@ -45,8 +49,8 @@ namespace CSTN_LactumCodex.pages
                 sourceURI = Openfile.FileName;
             }
             HB.Add("@profSource",ProfPicture.Source);
-            HB.Add("@userName",UsernameBX.Text);
-            query = "SELECT * from  where UserName = @userName";
+            HB.Add("@userName",UsernameBX.Content);
+            query = "SELECT * from where UserName = @userName";
             DataTab = ExDB.GetDataTable("CapstoneDBs", HB, query);
 
             if (DataTab != null) { }
@@ -56,6 +60,11 @@ namespace CSTN_LactumCodex.pages
 /*            string userNM = (string)rows["UserName"];
             string userPI = (string)rows["UserProfImg"];*/
             
+
+        }
+
+        private void saveInfo_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }

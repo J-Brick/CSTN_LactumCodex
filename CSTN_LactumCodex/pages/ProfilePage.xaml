@@ -9,7 +9,7 @@
     <Grid Background="#303030">
         <Grid>
             <Image Name="ProfPicture" Source="\pages\VariationPages\pagesImages\placeholder\placeHolderImg.jpeg" HorizontalAlignment="Left" Height="100" Width="100" Margin="10,10,0,0" VerticalAlignment="Top"/>
-            <TextBlock Name="UsernameBX"  HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top"/>
+            <Label Name="UsernameBX"  Content="" HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top"/>
             <ComboBox Name="favFaction" HorizontalAlignment="Left" Margin="90,120,0,0" VerticalAlignment="Top" Width="100" Foreground="#505050">
 
                 <ComboBoxItem Content="Favorite Faction"/>
@@ -36,7 +36,13 @@
                     </Style>
                 </Button.Resources>
             </Button>
-
+            <Button HorizontalAlignment="Left" Content="Save changes" FontSize="10" Name="saveProf" Margin="10,145,0,0" VerticalAlignment="Top" Height="20" Width="70" FontFamily="Georgia" Foreground="White" Background="Transparent" Click="saveInfo_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
 
         </Grid>
 
