@@ -33,7 +33,8 @@ namespace CSTN_LactumCodex.pages
 
         DataTable DataTab = new DataTable();
         Hashtable HB = new Hashtable();
-        string query;
+        string query1;
+        string query2;
         DataRow rows;
         string sourceURI;
 
@@ -41,21 +42,21 @@ namespace CSTN_LactumCodex.pages
         private void ChangeImage_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog Openfile = new OpenFileDialog();
-            Openfile.Filter = "Image Files|*.bmp;*.jpg*.png";
+            Openfile.Filter = "Image Files|*.bmp;*.jpg*.png,*.jpeg";
             Openfile.FilterIndex = 1;
             if (Openfile.ShowDialog() == true)
             {
                 ProfPicture.Source = new BitmapImage(new Uri(Openfile.FileName));
                 sourceURI = Openfile.FileName;
             }
-            HB.Add("@profSource",ProfPicture.Source);
+/*            HB.Add("@profSource",ProfPicture.Source);
             HB.Add("@userName",UsernameBX.Content);
-            query = "SELECT * from where UserName = @userName";
-            DataTab = ExDB.GetDataTable("CapstoneDBs", HB, query);
+            query1 = "SELECT * from UserProfImg where UserName = @userName";
+            DataTab = ExDB.GetDataTable("CapstoneDBs", HB, query1);
 
             if (DataTab != null) { }
 
-            rows = DataTab.Rows[0];
+            rows = DataTab.Rows[0];*/
 
 /*            string userNM = (string)rows["UserName"];
             string userPI = (string)rows["UserProfImg"];*/
@@ -64,6 +65,18 @@ namespace CSTN_LactumCodex.pages
         }
 
         private void saveInfo_Click(object sender, RoutedEventArgs e)
+        {
+/*            HB.Add("@profSource", ProfPicture.Source);*/
+            HB.Add("@userName", UsernameBX.Content);
+            HB.Add("@userFavFact", favFaction.Text);
+            query1 = "update UserProfImg set UserName = @userName, FavFaction = @userFavFact";
+            /* UserProfImg = @profSource*/
+            query2 = "update AccountDetailTable set UserName = @userName";
+            DataTab = ExDB.GetDataTable("CapstoneDBs", HB, query1);
+            DataTab = ExDB.GetDataTable("CapstoneDBs", HB, query2);
+        }
+
+        private void Change_Click(object sender, RoutedEventArgs e)
         {
 
         }
