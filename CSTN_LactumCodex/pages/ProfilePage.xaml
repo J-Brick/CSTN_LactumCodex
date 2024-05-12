@@ -8,8 +8,8 @@
         Title="ProfilePage" Height="195" Width="300">
     <Grid Background="#303030">
         <Grid>
-            <Image Source="\pages\VariationPages\pagesImages\placeholder\placeHolderImg.jpeg" HorizontalAlignment="Left" Height="100" Width="100" Margin="10,10,0,0" VerticalAlignment="Top"/>
-            <Label Name="UsernameBX"  HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top"/>
+            <Image Name="ProfPicture" Source="\pages\VariationPages\pagesImages\placeholder\placeHolderImg.jpeg" HorizontalAlignment="Left" Height="100" Width="100" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <TextBlock Name="UsernameBX"  HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top"/>
             <ComboBox Name="favFaction" HorizontalAlignment="Left" Margin="90,120,0,0" VerticalAlignment="Top" Width="100" Foreground="#505050">
 
                 <ComboBoxItem Content="Favorite Faction"/>
@@ -27,8 +27,8 @@
                 <ComboBoxItem Content="Wood elves"/>
 
             </ComboBox>
-            <TextBox HorizontalAlignment="Left" Name="Usersname" Margin="115,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Georgia" Foreground="White" Background="Transparent" />
-            <TextBox HorizontalAlignment="Left" Name="LastMessage" Margin="115,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Georgia" Foreground="White" Background="Transparent" />
+            <TextBlock HorizontalAlignment="Left" Name="Usersname" Margin="115,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Georgia" Foreground="White" Background="Transparent" />
+            <TextBlock HorizontalAlignment="Left" Name="LastMessage" Margin="115,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Georgia" Foreground="White" Background="Transparent" />
             <Button HorizontalAlignment="Left" Content="Change image" FontSize="10" Name="ChangeImage" Margin="10,120,0,0" VerticalAlignment="Top" Height="20" Width="70" FontFamily="Georgia" Foreground="White" Background="Transparent" Click="ChangeImage_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
