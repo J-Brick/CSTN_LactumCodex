@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages"
         mc:Ignorable="d"
-        Title="MainSelection" Height="450" Width="800">
+        Title="MainSelection" Height="450" Width="1000">
     <Grid Background="#303030">
         <Button Click="InfoPagesBTN" Content="Information/Lore Pages" HorizontalAlignment="Center" Margin="-450,110,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="185">
             <Button.Resources>
