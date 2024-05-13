@@ -5,50 +5,72 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages"
         mc:Ignorable="d"
-        Title="MainSelection" Height="450" Width="1000">
-    <Grid Background="#303030">
-        <Button Click="InfoPagesBTN" Content="Information/Lore Pages" HorizontalAlignment="Center" Margin="-450,110,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="185">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+        Title="MainSelection" Height="450" Width="1000" ResizeMode="CanResize" MinHeight="450" MinWidth="1000">
+    <Grid Background="#303030" Width="auto" Height="auto">
 
-        <Button Click="ChatBTN" Content="Chat Room" HorizontalAlignment="Center" Margin="-450,210,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="100">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+        
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="400"/>
+        </Grid.RowDefinitions>
 
-        <Button Content="Game Listing" HorizontalAlignment="Center" Margin="-450,310,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="120">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="650"/>
 
-        <Label Name="UsernameLabel"  HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top"/>
-        <Button Name="profile"  Content="Prfl" Click="ToProfile" HorizontalAlignment="Left" Height="25" Width="25" Margin="10,10,0,0" VerticalAlignment="Top" >
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Row="0" Grid.Column="0" Height="auto" Width="auto">
+            <Button Name="profile" Grid.Row="0" Content="Profile" Click="ToProfile" HorizontalAlignment="Stretch" Height="25" MinHeight="25" MinWidth="55" Width="55" Margin="-250,10,0,0" VerticalAlignment="Stretch" Foreground="#8888dd" FontFamily="High Tower Text" FontSize="15" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
 
-        </Button>
+            </Button>
+            <Label Name="UsernameLabel" Grid.Row="0" HorizontalAlignment="Stretch" Margin="-150,-25,0,0" Width="20" MinWidth="20" Height="20" MinHeight="20" VerticalAlignment="Stretch" Foreground="#8888dd" FontFamily="High Tower Text"/>
+        </StackPanel>
 
-        <TextBlock HorizontalAlignment="Left" Margin="410,75,0,0" TextWrapping="Wrap" Text="Information pages: similar to websites, this part of the codex can tell you just about anything you need/want to know about a factions, specific characters, and even the gods of warhammers" 
-         VerticalAlignment="Top" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#8888dd" Width="360"/>
+        <StackPanel Grid.Column="0" Grid.Row="1" Height="auto" Width="auto" Margin="0,0,0,10">
+            <Button Click="InfoPagesBTN" Content="Information/Lore Pages" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="40,85,0,0" VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Height="25" MinHeight="25" MinWidth="185" Width="185">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
 
-        <TextBlock HorizontalAlignment="Left" Margin="410,200,0,0" TextWrapping="Wrap" Text="Chat Room: this is an are for any/all warhammer fans and enthusists to talk and chat with Each Other" 
-         VerticalAlignment="Top" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#8888dd" Width="369"/>
+            <Button Click="ChatBTN" Content="Chat Room" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="40,85,0,0" VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Height="25" MinHeight="25" MinWidth="100" Width="100">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
 
-        <TextBlock HorizontalAlignment="Left" Margin="410,290,0,0" TextWrapping="Wrap" Text="Game Listing: this is the area of the codex where you can go to see where you can buy warhammer games, along with the listed pricing for each of them" 
-         VerticalAlignment="Top" FontFamily="Viner Hand ITC" FontSize="15" Foreground="#8888dd" Width="350"/>
+            <Button Content="Game Listing" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="40,85,0,0" VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Height="25" MinHeight="25" MinWidth="120" Width="120">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Width="auto" Height="auto" Margin="0,0,0,10">
+
+            <TextBlock HorizontalAlignment="Stretch" Margin="100,60,0,0" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="Information pages: similar to websites, this part of the codex can tell you just about anything you need/want to know about a factions, specific characters, and even the gods of warhammers" 
+  VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#8888dd" Height="75" MinHeight="75" MinWidth="360" Width="360"/>
+
+            <TextBlock HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="100,60,0,0" TextWrapping="Wrap" Text="Chat Room: this is an are for any/all warhammer fans and enthusists to talk and chat with Each Other" 
+  VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#8888dd" MinWidth="369" Width="369" MinHeight="35" Height="35" />
+
+            <TextBlock HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="100,60,0,0" TextWrapping="Wrap" Text="Game Listing: this is the area of the codex where you can go to see where you can buy warhammer games, along with the listed pricing for each of them" 
+  VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#8888dd" Width="350" MinWidth="350" MinHeight="55" Height="55"/>
+        </StackPanel>
 
     </Grid>
 </Window>

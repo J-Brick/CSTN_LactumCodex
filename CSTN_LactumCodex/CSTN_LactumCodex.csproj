@@ -22,6 +22,7 @@
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp2.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp3.png" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp4.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\ImperialLogo.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec1.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec2.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec3.jpeg" />
@@ -101,6 +102,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\imperium man\ImperialLogo.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\necrons\nec1.jpeg">

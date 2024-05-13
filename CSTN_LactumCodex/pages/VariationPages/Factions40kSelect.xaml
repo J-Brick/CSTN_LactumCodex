@@ -5,65 +5,112 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages"
         mc:Ignorable="d"
-        Title="Factions40kSelect" Height="450" Width="800">
+        Title="Factions40kSelect" Height="550" Width="800">
     <Grid Background="#303030">
 
-        <TextBlock HorizontalAlignment="Left" Margin="61,53,0,0" TextWrapping="Wrap" Text="Imperium of man" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="166" Foreground="#8888dd"/>
-        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="78,77,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select01" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="67,120,0,0" TextWrapping="Wrap" Text="Forces of chaos" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="180" Foreground="#8888dd"/>
-        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="79,140,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select02"  FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="67,183,0,0" TextWrapping="Wrap" Text="Orks / Greenskins" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="198" Foreground="#8888dd"/>
-        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="79,203,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select03" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="67,246,0,0" TextWrapping="Wrap" Text="Eladar" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="75"  Foreground="#8888dd"/>
-        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="79,270,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select04" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="67,313,0,0" TextWrapping="Wrap" Text="Necrons" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="95" Foreground="#8888dd"/>
-        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="79,333,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select05"  FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="67,373,0,0" TextWrapping="Wrap" Text="tyrinids" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="83" Foreground="#8888dd"/>
-        <Button Content="Select Faction" HorizontalAlignment="Left" Margin="80,393,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select06"  FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="740,383,0,0" VerticalAlignment="Top" Click="BackBTN" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="50">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Label Name="UsernameLabel" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="#8888dd"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <Label Name="UsernameLabel" Content="" Height="20" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Foreground="#8888dd"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1">
+            <TextBlock HorizontalAlignment="Left" Margin ="20,8,0,0" TextWrapping="Wrap" Text="Imperium of man" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="166" Foreground="#8888dd"/>
+            <Button Content="Select Faction" HorizontalAlignment="Left" Margin ="20,10,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select01" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\imperium man\ImperialLogo.jpg" Width="100" Height="60" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="20,8,0,0" Text="Forces of chaos" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="180" Foreground="#8888dd"/>
+            <Button Content="Select Faction" HorizontalAlignment="Left" Margin ="20,10,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select02"  FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\forces chaos\FOCLogos.jpg" Width="100" Height="60" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="20,8,0,0" Text="Orks / Greenskins" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="198" Foreground="#8888dd"/>
+            <Button Content="Select Faction" HorizontalAlignment="Left" Margin ="20,10,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select03" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\orks\orks Logos.jpg" Stretch="Fill" Width="100" Height="60" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4">
+            <TextBlock HorizontalAlignment="Left" Margin ="20,8,0,0" TextWrapping="Wrap" Text="Eladar" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="75"  Foreground="#8888dd"/>
+            <Button Content="Select Faction" HorizontalAlignment="Left" Margin ="20,10,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select04" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\eldar\eldarLogos.png" Width="100" Height="60" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="20,8,0,0" Text="Necrons" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="95" Foreground="#8888dd"/>
+            <Button Content="Select Faction" HorizontalAlignment="Left" Margin ="20,10,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select05"  FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\necronLogos.png"  Width="100" Height="60" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="20,8,0,0" Text="tyrinids" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="83" Foreground="#8888dd"/>
+            <Button Content="Select Faction" HorizontalAlignment="Left" Margin ="20,10,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select06"  FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\tyranids\tyranidLogos.jpg" Stretch="Uniform" Width="100" Height="60" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Column="2" Grid.Row="6">
+            <Button Content="Back" Grid.Column="1" HorizontalAlignment="Right" Margin ="0,49,20,0"  VerticalAlignment="Bottom" Click="BackBTN" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="50">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+        
+        
+
         
     </Grid>
 </Window>
