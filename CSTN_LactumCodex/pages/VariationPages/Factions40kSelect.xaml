@@ -40,7 +40,7 @@
 
         <StackPanel Grid.Row="2">
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="20,8,0,0" Text="Forces of chaos" VerticalAlignment="Top" FontSize="18" FontFamily="Copperplate Gothic Light" Width="180" Foreground="#8888dd"/>
-            <Button Content="Select Faction" HorizontalAlignment="Left" Margin ="20,10,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select02"  FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
+            <Button Content="Select Faction" HorizontalAlignment="Left" Margin ="20,10,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Click="Faction_Select02" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="155">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>

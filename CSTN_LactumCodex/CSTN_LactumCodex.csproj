@@ -20,7 +20,7 @@
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for4.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp1.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp2.jpg" />
-    <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp3.png" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp3.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp4.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\imperium man\ImperialLogo.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec1.jpeg" />
@@ -98,7 +98,7 @@
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp2.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp3.png">
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp3.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\imperium man\imp4.jpg">
