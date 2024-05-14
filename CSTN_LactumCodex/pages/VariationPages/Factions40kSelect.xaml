@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages"
         mc:Ignorable="d"
-        Title="Factions40kSelect" Height="550" Width="800">
+        Title="Factions40kSelect" Height="600" Width="1000">
     <Grid Background="#303030">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="80"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -71,7 +71,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\eldar\eldarLogos.png" Width="100" Height="60" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\eldar\eldarLogos.png" Width="100" Height="75" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
         </StackPanel>
 
         <StackPanel Grid.Row="5">
@@ -83,7 +83,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\necronLogos.png"  Width="100" Height="60" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\necronLogos.png"  Width="100" Height="75" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
         </StackPanel>
 
         <StackPanel Grid.Row="6">

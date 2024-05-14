@@ -6,17 +6,46 @@
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages.Factions"
         xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif" x:Class="CSTN_LactumCodex.pages.VariationPages.Factions.FactionpageGreenskins"
         mc:Ignorable="d"
-        Title="FactionpageGreenskins" Height="800" Width="800">
+        Title="FactionpageGreenskins" Height="1000" Width="1600">
     <Grid Background="#002714">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="850"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Image Name="PicHolder" Source="\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp1.jpg" Margin="0,300,0,0" Height="414" Width="727" />
+            <Button Height="50" Width="120" Content="prev" FontSize="15" HorizontalAlignment="Left" Margin="160,50,0,0"  Click="Prev_Photo"/>
+            <Button Height="50" Width="120" Content="Next" FontSize="15" HorizontalAlignment="Right" Margin="0,-50,160,0" Click="Next_photo"/>
+        </StackPanel>
+
         <Label x:Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
 
-        <Button Content="Back" HorizontalAlignment="Left" Margin="712,704,0,0" VerticalAlignment="Top" Click="BackBTN"  Width="50" FontFamily="Copperplate Gothic Light" FontSize="13" Foreground="#bb2324" Background="DarkGray">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="0,0,0,10">
+            <Button Content="Back" HorizontalAlignment="Right" Width="50" Height="25"  Margin="0,70,50,0" VerticalAlignment="Bottom" Click="BackBTN" FontSize="15" Background="DarkGray">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            
+                
+            </Button>
+            <Button Width="99" Height="25" Margin="0,-65,20,0" Content="sample sounds" VerticalAlignment="Top" HorizontalAlignment="right" FontFamily="Copperplate Gothic Light" FontSize="13" Foreground="#bb2324" Background="DarkGray">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+        </StackPanel>
 
         <TextBlock HorizontalAlignment="Left" Margin="124,23,0,0" TextWrapping="Wrap" Text="Orks" VerticalAlignment="Top" Height="63" Width="202" x:Name="FnBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="16"/>
         <Label Content="Faction name:" HorizontalAlignment="Left" Margin="36,18,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
@@ -36,12 +65,6 @@
         <Image Name="orkGuy" Stretch="Fill" Source="\pages\VariationPages\pagesImages\warhammer40k\orks\ork2.jpeg" Height="250" Width="230" Margin="540,175,30,359"/>
         <Image Name="orkPlane" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\orks\ork3.jpeg" Height="230" Width="400" Margin="-6,534,406,20"/>
 
-        <Button Width="99" Height="25" Margin="500,650,0,0" Content="Main Leader" FontFamily="Copperplate Gothic Light" FontSize="13" Foreground="#bb2324" Background="DarkGray">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+        
     </Grid>
 </Window>

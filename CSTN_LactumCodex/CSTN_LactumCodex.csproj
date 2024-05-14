@@ -14,6 +14,8 @@
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\eldar\eld2.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\eldar\eld3.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\eldar\eld4.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\eldar\eldarLogos.png" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\forces chaos\FOCLogos.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for1.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for2.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for3.jpg" />
@@ -27,13 +29,16 @@
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec2.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec3.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\nec4.jpeg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\necrons\necronLogos.png" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\ork1.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\ork2.jpeg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\ork3.jpeg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\orks\orks Logos.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr1.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr2.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr3.jpg" />
     <None Remove="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr4.jpg" />
+    <None Remove="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyranidLogos.jpg" />
     <None Remove="pages\VariationPages\pagesImages\WarhammerFant\greenskin\greenskins1.jpg" />
     <None Remove="pages\VariationPages\pagesImages\WarhammerFant\greenskin\greenskins2.jpg" />
     <None Remove="pages\VariationPages\pagesImages\WarhammerFant\greenskin\greenskins3.jpg" />
@@ -80,6 +85,12 @@
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\eldar\eld4.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\eldar\eldarLogos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\forces chaos\FOCLogos.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\forces chaos\for1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -119,6 +130,9 @@
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\necrons\nec4.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\necrons\necronLogos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\orks\ork1.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -126,6 +140,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\orks\ork3.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\orks\orks Logos.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr1.jpg">
@@ -138,6 +155,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pages\VariationPages\pagesImages\warhammer40k\tyranids\tyranidLogos.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="pages\VariationPages\pagesImages\WarhammerFant\greenskin\greenskins1.jpg">

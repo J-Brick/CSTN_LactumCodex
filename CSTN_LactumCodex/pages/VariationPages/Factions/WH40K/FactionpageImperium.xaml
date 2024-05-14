@@ -19,10 +19,6 @@
 
         <StackPanel Grid.Row="0" Grid.Column="1">
             <Image Name="PicHolder" Source="\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp1.jpg" Margin="0,300,0,0" Height="414" Width="727" />
-            <!--
-            <Image x:Name="ELDplace" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp2.jpg" Height="158" Width="294" />
-            <Image Name="ELDtitan" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp3.png" Height="250" Width="230" />
-            <Image Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp4.jpg" Height="230" Width="400" Margin="0,-150,0,0"/> -->
             <Button Height="50" Width="120" Content="prev" FontSize="15" HorizontalAlignment="Left" Margin="160,50,0,0"  Click="Prev_Photo"/>
             <Button Height="50" Width="120" Content="Next" FontSize="15" HorizontalAlignment="Right" Margin="0,-50,160,0" Click="Next_photo"/>
         </StackPanel>
@@ -52,16 +48,13 @@
 
 
         <StackPanel Grid.Column="1" Grid.Row="1" Margin="0,0,0,10">
-            <Button Content="Back" HorizontalAlignment="Right" Width="50" Height="25"  Margin="0,100,20,0" VerticalAlignment="Bottom" Click="BackBTN" FontSize="15" Background="DarkGray">
+            <Button Content="Back" HorizontalAlignment="Right" Width="50" Height="25"  Margin="0,70,50,0" VerticalAlignment="Bottom" Click="BackBTN" FontSize="15" Background="DarkGray">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
                     </Style>
                 </Button.Resources>
             </Button>
-
-
-
         </StackPanel>
 
     </Grid>
