@@ -8,19 +8,27 @@
         Title="MainSelection" Height="450" Width="1000" ResizeMode="CanResize" MinHeight="450" MinWidth="1000">
     <Grid Background="#303030" Width="auto" Height="auto">
 
-        
-        
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="400"/>
         </Grid.RowDefinitions>
-
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="350"/>
             <ColumnDefinition Width="650"/>
 
         </Grid.ColumnDefinitions>
-        
+
+        <Border Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,2" EndPoint="1.3,1">
+
+                    <GradientStop Color="#202020" Offset="0.4"/>
+                    <GradientStop Color="#4166F5" Offset="3"/>
+
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
         <StackPanel Grid.Row="0" Grid.Column="0" Height="auto" Width="auto">
             <Button Name="profile" Grid.Row="0" Content="Profile" Click="ToProfile" HorizontalAlignment="Stretch" Height="25" MinHeight="25" MinWidth="55" Width="55" Margin="-250,10,0,0" VerticalAlignment="Stretch" Foreground="#8888dd" FontFamily="High Tower Text" FontSize="15" >
                 <Button.Resources>
