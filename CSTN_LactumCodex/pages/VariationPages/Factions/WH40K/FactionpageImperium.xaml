@@ -17,6 +17,17 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
+        <Border Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,2" EndPoint="1,0">
+
+                    <GradientStop Color="#202020" Offset="0.5"/>
+                    <GradientStop Color="#4b0000" Offset="1"/>
+
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
         <StackPanel Grid.Row="0" Grid.Column="1">
             <Image Name="PicHolder" Source="\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp1.jpg" Margin="0,300,0,0" Height="414" Width="727" />
             <Button Height="50" Width="120" Content="prev" FontSize="15" HorizontalAlignment="Left" Margin="160,50,0,0"  Click="Prev_Photo"/>
