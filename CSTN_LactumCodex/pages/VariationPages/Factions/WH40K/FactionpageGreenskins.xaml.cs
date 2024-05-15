@@ -97,7 +97,7 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
             {
                 i = 4;
             }
-            PicHolder.Source = new BitmapImage(new Uri(@"\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp" + i + ".jpg", UriKind.Relative)); //should look similar to "\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp1.jpg"
+            PicHolder.Source = new BitmapImage(new Uri(@"\pages\VariationPages\pagesImages\warhammer40k\orks\ork" + i + ".jpeg", UriKind.Relative)); //should look similar to "\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp1.jpg"
         } //last button
 
         private void Next_photo(object sender, RoutedEventArgs e)
@@ -108,7 +108,7 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
             {
                 i = 1;
             }
-            PicHolder.Source = new BitmapImage(new Uri(@"\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp" + i + ".jpg", UriKind.Relative)); //same as last comment
+            PicHolder.Source = new BitmapImage(new Uri(@"\pages\VariationPages\pagesImages\warhammer40k\orks\ork" + i + ".jpeg", UriKind.Relative)); //same as last comment
         } //next button
     }
 }

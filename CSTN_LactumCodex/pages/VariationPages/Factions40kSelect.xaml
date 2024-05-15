@@ -70,7 +70,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\orks\orks Logos.jpg" Stretch="Fill" Width="100" Height="60" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <Image Source="C:\Users\jbrickwedde\source\repos\CSC160\Capstone\CSTN_LactumCodex\CSTN_LactumCodex\pages\VariationPages\pagesImages\warhammer40k\orks\logos\orks Logos.jpg" Stretch="Fill" Width="100" Height="60" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
         </StackPanel>
 
         <StackPanel Grid.Row="4">
@@ -106,7 +106,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\tyranids\tyranidLogos.jpg" Stretch="Uniform" Width="100" Height="60" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <Image Source="\pages\VariationPages\pagesImages\warhammer40k\tyranids\logo\tyranidLogos.jpg" Stretch="Uniform" Width="100" Height="60" Margin="0,-50,0,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
         </StackPanel>
 
 

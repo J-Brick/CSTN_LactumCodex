@@ -8,8 +8,6 @@
         mc:Ignorable="d"
         Title="FactionpageGreenskins" Height="1000" Width="1600">
     <Grid Background="#002714">
-
-
         <Grid.RowDefinitions>
             <RowDefinition Height="850"/>
             <RowDefinition Height="150"/>
@@ -19,25 +17,55 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
+        <Border Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,2" EndPoint="1,0">
+
+                    <GradientStop Color="#202020" Offset="0.5"/>
+                    <GradientStop Color="#004714" Offset="1"/>
+
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
         <StackPanel Grid.Row="0" Grid.Column="1">
-            <Image Name="PicHolder" Source="\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp1.jpg" Margin="0,300,0,0" Height="414" Width="727" />
+            <Image Name="PicHolder" Source="\pages\VariationPages\pagesImages\warhammer40k\orks\ork1.jpeg" Margin="0,300,0,0" Height="414" Width="727" />
             <Button Height="50" Width="120" Content="prev" FontSize="15" HorizontalAlignment="Left" Margin="160,50,0,0"  Click="Prev_Photo"/>
             <Button Height="50" Width="120" Content="Next" FontSize="15" HorizontalAlignment="Right" Margin="0,-50,160,0" Click="Next_photo"/>
         </StackPanel>
 
-        <Label x:Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Label x:Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="Faction name:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="Orks" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FnBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="16"/>
+            <Label Content="Faction Government:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="120,-20,0,30" Height="85" Width="670" x:Name="FgBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
+            <Label Content="Faction Currency:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FcBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
+            <Label Content="Faction Leaders:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FlBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
+            <Label Content="Faction language:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FaBLk" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
+            <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FdtyBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
+            <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FrBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
+
+        </StackPanel>
+
+
 
         <StackPanel Grid.Column="1" Grid.Row="1" Margin="0,0,0,10">
-            <Button Content="Back" HorizontalAlignment="Right" Width="50" Height="25"  Margin="0,70,50,0" VerticalAlignment="Bottom" Click="BackBTN" FontSize="15" Background="DarkGray">
+            <Button Content="Back" HorizontalAlignment="Right" Width="50" Height="25"  Margin="0,70,50,0" VerticalAlignment="Bottom" Click="BackBTN" FontSize="17" Background="DarkGray">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
                     </Style>
                 </Button.Resources>
-            
-                
+
+
             </Button>
-            <Button Width="99" Height="25" Margin="0,-65,20,0" Content="sample sounds" VerticalAlignment="Top" HorizontalAlignment="right" FontFamily="Copperplate Gothic Light" FontSize="13" Foreground="#bb2324" Background="DarkGray">
+            <Button Width="120" Height="25" Margin="0,-65,20,0" Content="sample sounds" VerticalAlignment="Top" HorizontalAlignment="right" FontFamily="Copperplate Gothic Light" FontSize="13" Foreground="#bb2324" Background="DarkGray">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
@@ -47,24 +75,13 @@
 
         </StackPanel>
 
-        <TextBlock HorizontalAlignment="Left" Margin="124,23,0,0" TextWrapping="Wrap" Text="Orks" VerticalAlignment="Top" Height="63" Width="202" x:Name="FnBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="16"/>
-        <Label Content="Faction name:" HorizontalAlignment="Left" Margin="36,18,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FgBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
-        <Label Content="Faction Government:" HorizontalAlignment="Left" Margin="36,86,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FcBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
-        <Label Content="Faction Currency:" HorizontalAlignment="Left" Margin="45,160,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="156,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FlBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
-        <Label Content="Faction Leaders:" HorizontalAlignment="Left" Margin="45,229,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,458,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FaBLk" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
-        <Label Content="Faction language:" HorizontalAlignment="Left" Margin="52,453,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FdtyBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
-        <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="63,377,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" x:Name="FrBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
-        <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="56,297,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
-        <Image Name="Orkmech" Source="\pages\VariationPages\pagesImages\warhammer40k\orks\ork1.jpeg" Height="130" Width="230" Margin="557,21,13,633"/>
-        <Image Name="orkGuy" Stretch="Fill" Source="\pages\VariationPages\pagesImages\warhammer40k\orks\ork2.jpeg" Height="250" Width="230" Margin="540,175,30,359"/>
-        <Image Name="orkPlane" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\orks\ork3.jpeg" Height="230" Width="400" Margin="-6,534,406,20"/>
 
-        
+
+        <!--<Image Name="Orkmech" Source="\pages\VariationPages\pagesImages\warhammer40k\orks\ork1.jpeg" Height="130" Width="230" Margin="557,21,13,633"/>
+<Image Name="orkGuy" Stretch="Fill" Source="\pages\VariationPages\pagesImages\warhammer40k\orks\ork2.jpeg" Height="250" Width="230" Margin="540,175,30,359"/>
+<Image Name="orkPlane" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\orks\ork3.jpeg" Height="230" Width="400" Margin="-6,534,406,20"/>-->
+
+
+
     </Grid>
 </Window>
