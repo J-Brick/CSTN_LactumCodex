@@ -112,7 +112,3 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
         } //next button
     }
 }
-
-    }
-    }
-
