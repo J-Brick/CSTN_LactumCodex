@@ -36,19 +36,19 @@
 
         <StackPanel Grid.Row="0" Grid.Column="0">
             <Label x:Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-            <Label Content="Faction name:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <Label Content="Faction name:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
             <TextBlock TextWrapping="Wrap" Text="Orks" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FnBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="16"/>
-            <Label Content="Faction Government:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <Label Content="Faction Government:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
             <TextBlock TextWrapping="Wrap" Text="" Margin="120,-20,0,30" Height="85" Width="670" x:Name="FgBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
-            <Label Content="Faction Currency:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <Label Content="Faction Currency:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
             <TextBlock TextWrapping="Wrap" Text="" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FcBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
-            <Label Content="Faction Leaders:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <Label Content="Faction Leaders:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
             <TextBlock TextWrapping="Wrap" Text="" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FlBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
-            <Label Content="Faction language:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <Label Content="Faction language:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
             <TextBlock TextWrapping="Wrap" Text="" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FaBLk" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
-            <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
             <TextBlock TextWrapping="Wrap" Text="" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FdtyBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
-            <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Viner Hand ITC" Foreground="White"/>
+            <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
             <TextBlock TextWrapping="Wrap" Text="" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FrBLK" FontFamily="Copperplate Gothic Light" Foreground="#bb2324" FontSize="14"/>
 
         </StackPanel>

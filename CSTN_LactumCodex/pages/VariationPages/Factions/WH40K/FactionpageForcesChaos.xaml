@@ -5,36 +5,69 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages.Factions"
         mc:Ignorable="d"
-        Title="FactionpageForcesChaos" Height="800" Width="800">
+        Title="FactionpageForcesChaos" Height="1000" Width="1600">
     <Grid Background="#202020">
-        <Label Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
 
-        <Button Content="Back" HorizontalAlignment="Left" Margin="745,535,0,0" VerticalAlignment="Top" Click="BackBTN" FontSize="15" FontFamily="Copperplate Gothic Light" Foreground="#0207ff" Background="DarkGray" Width="50">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="168,23,0,0" TextWrapping="Wrap" Text="Forces of Chaos" VerticalAlignment="Top" Height="63" Width="202" Name="FnBLK" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
-        <Label Content="Faction name:" HorizontalAlignment="Left" Margin="36,18,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="238,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FgBLK" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
-        <Label Content="Faction Government:" HorizontalAlignment="Left" Margin="36,86,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="225,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FcBLK" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
-        <Label Content="Faction Currency:" HorizontalAlignment="Left" Margin="45,160,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="210,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FlBLK" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
-        <Label Content="Faction Leaders:" HorizontalAlignment="Left" Margin="45,229,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="230,458,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FaBLk" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
-        <Label Content="Faction language:" HorizontalAlignment="Left" Margin="52,453,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="208,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FdtyBLK" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
-        <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="63,377,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="220,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FrBLK" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
-        <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="56,297,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="850"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
-        <Image Name="forcesGuy" Source="\pages\VariationPages\pagesImages\warhammer40k\forces chaos\for1.jpg" Height="130" Width="230" Margin="557,21,13,633"/>
+        <Border Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,2" EndPoint="1,0">
+
+                    <GradientStop Color="#202020" Offset="0.6"/>
+                    <GradientStop Color="#dd1919" Offset="1"/>
+
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Image Name="PicHolder" Source="\pages\VariationPages\pagesImages\warhammer40k\forces chaos\for1.jpg" Margin="0,300,0,0" Height="414" Width="727" />
+            <Button Height="50" Width="120" Content="prev" FontSize="15" HorizontalAlignment="Left" Margin="160,50,0,0"  Click="Prev_Photo"/>
+            <Button Height="50" Width="120" Content="Next" FontSize="15" HorizontalAlignment="Right" Margin="0,-50,160,0" Click="Next_photo"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Button Content="Back" HorizontalAlignment="Right" Width="50" Height="25"  Margin="0,70,50,0" VerticalAlignment="Bottom" Click="BackBTN" FontSize="17" Background="DarkGray">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Label Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="Faction name:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
+            <TextBlock TextWrapping="Wrap" Text="Forces of Chaos" Margin="130,-20,0,30" Height="85" Width="670" x:Name="FnBLK" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
+            <Label Content="Faction Government:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="130,-20,0,30" Height="85" Width="670" x:Name="FgBLK" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
+            <Label Content="Faction Currency:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="130,-20,0,30" Height="85" Width="670" x:Name="FcBLK" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
+            <Label Content="Faction Leaders:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="130,-20,0,30" Height="85" Width="670" x:Name="FlBLK" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
+            <Label Content="Faction language:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="175,-20,0,30" Height="85" Width="650" x:Name="FaBLk" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
+            <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="140,-20,0,30" Height="85" Width="650" x:Name="FdtyBLK" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
+            <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9" FontSize="16"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="160,-20,0,30" Height="85" Width="650" x:Name="FrBLK" FontFamily="Copperplate Gothic Light" Foreground="#dd1919" FontSize="16"/>
+        </StackPanel>
+
+
+        <!--        <Image Name="forcesGuy" Source="\pages\VariationPages\pagesImages\warhammer40k\forces chaos\for1.jpg" Height="130" Width="230" Margin="557,21,13,633"/>
         <Image Name="forcesPlace" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\forces chaos\for2.jpg" Height="250" Width="230" Margin="540,111,30,423"/>
         <Image Name="forcesTitan" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\forces chaos\for3.jpg" Height="250" Width="230" Margin="419,514,151,20"/>
-        <Image Name="Tank" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\forces chaos\for4.jpg" Height="230" Width="400" Margin="-6,534,406,20"/>
+        <Image Name="Tank" Stretch="Uniform" Source="\pages\VariationPages\pagesImages\warhammer40k\forces chaos\for4.jpg" Height="230" Width="400" Margin="-6,534,406,20"/>-->
 
     </Grid>
 </Window>
