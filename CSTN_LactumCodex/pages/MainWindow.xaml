@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex"
         mc:Ignorable="d"
-        Title="MainWindow" Height="820" Width="1450" 
+        Title="MainWindow" Height="1000" Width="1600"
+        WindowStartupLocation="CenterScreen"
         AllowsTransparency="False"
-        WindowStartupLocation="CenterScreen" Background="Transparent">
-
+        Background="Transparent">
 
     <Grid>
-
         <Grid.RowDefinitions>
-            <RowDefinition Height="800"/>
+            <RowDefinition Height="650"/>
+            <RowDefinition Height="350"/>
         </Grid.RowDefinitions>
-        
-        <Border>
+
+        <Border Grid.RowSpan="2">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,2" EndPoint="1.3,1">
 
@@ -36,8 +36,8 @@
 
         </StackPanel>
 
-        <StackPanel Grid.Row="1" VerticalAlignment="Bottom" Margin="0,0,0,0" Height="180">
-            <Button Content="Log in" HorizontalAlignment="Center" VerticalAlignment="Center" Click="LGNButton_Click" Margin="10,0,10,10" Height="35" Width="85" FontFamily="Agency FB" FontSize="25" Foreground="#0207ff" Background="DarkGray" >
+        <StackPanel Grid.Row="1" >
+            <Button Content="Log in" HorizontalAlignment="Center" VerticalAlignment="Center" Click="LGNButton_Click" Margin="10,90,10,10" Height="35" Width="85" FontFamily="Agency FB" FontSize="25" Foreground="#0207ff" Background="DarkGray" >
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>

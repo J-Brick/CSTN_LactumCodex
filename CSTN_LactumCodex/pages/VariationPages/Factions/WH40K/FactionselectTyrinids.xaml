@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages.Factions"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="FactionselectTyrinids" Height="1000" Width="1600">
     <Grid Background="#4B213C">
 

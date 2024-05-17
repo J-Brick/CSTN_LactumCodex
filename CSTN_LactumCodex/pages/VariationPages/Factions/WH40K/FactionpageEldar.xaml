@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages.Factions"
         mc:Ignorable="d"
-        Title="FactionpageEldar" Height="1000" Width="1600">
+        WindowStartupLocation="CenterScreen"
+        Title="FactionpageEldar" 
+        Height="1000" Width="1600">
     <Grid Background="#4b0000">
         <Grid.RowDefinitions>
             <RowDefinition Height="850"/>
