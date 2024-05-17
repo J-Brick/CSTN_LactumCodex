@@ -53,13 +53,15 @@
             <TextBlock TextWrapping="Wrap" Text="" Margin="100,-20,0,30" Height="85" Width="650" x:Name="FrBLK" FontFamily="Copperplate Gothic Light" Foreground="#E3dac9"/>
         </StackPanel>
 
-        <Button Content="Back" HorizontalAlignment="Left" Margin="744,608,0,0" VerticalAlignment="Top" Click="BackBTN" FontFamily="Copperplate Gothic Light" Foreground="#0207ff" Background="DarkGray" Width="50">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Button Content="Back" HorizontalAlignment="Right" Margin="0,60,30,0" VerticalAlignment="Top" Click="BackBTN" FontFamily="Copperplate Gothic Light" Foreground="#0207ff" Background="DarkGray" Width="50">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
 
 
         <!-- <Image Name="ELDguy" Source="\pages\VariationPages\pagesImages\warhammer40k\tyranids\tyr1.jpg" Height="130" Width="230" Margin="542,33,28,621"/>
