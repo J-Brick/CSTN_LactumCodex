@@ -86,5 +86,28 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
             infoShow();
         }
 
+        int i = 1;
+
+        private void Prev_Photo(object sender, RoutedEventArgs e)
+        {
+            i--;
+
+            if (i < 1)
+            {
+                i = 4;
+            }
+            PicHolder.Source = new BitmapImage(new Uri(@"\pages\VariationPages\pagesImages\warhammer40k\necrons\nec"+ i +".jpeg", UriKind.Relative)); //should look similar to "\pages\VariationPages\pagesImages\warhammer40k\imperium man\imp1.jpg"
+        } //last button
+
+        private void Next_photo(object sender, RoutedEventArgs e)
+        {
+            i++;
+
+            if (i > 4)
+            {
+                i = 1;
+            }
+            PicHolder.Source = new BitmapImage(new Uri(@"\pages\VariationPages\pagesImages\warhammer40k\necrons\nec" + i + ".jpeg", UriKind.Relative)); //same as last comment
+        } //next button
     }
 }

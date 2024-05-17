@@ -5,33 +5,70 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages.Factions"
         mc:Ignorable="d"
-        Title="FactionselectNecrons" Height="600" Width="800">
+        Title="FactionselectNecrons" Height="1000" Width="1600">
     <Grid Background="#202020" >
 
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="850"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,2" EndPoint="1,0">
+
+                    <GradientStop Color="#202020" Offset="0.6"/>
+                    <GradientStop Color="#226622" Offset="1"/>
+
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Image Name="PicHolder" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec1.jpeg" Margin="0,300,0,0" Height="414" Width="727" />
+            <Button Height="50" Width="120" Content="prev" FontSize="15" HorizontalAlignment="Left" Margin="160,50,0,0"  Click="Prev_Photo"/>
+            <Button Height="50" Width="120" Content="Next" FontSize="15" HorizontalAlignment="Right" Margin="0,-50,160,0" Click="Next_photo"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Button Content="Back" HorizontalAlignment="Right" Width="50" Height="25"  Margin="0,70,50,0" VerticalAlignment="Bottom" Click="BackBTN" FontSize="17" Background="DarkGray">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
         
         <Label Name="UsernameLabel"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
 
-    <Button Content="Back" HorizontalAlignment="Left" Margin="745,535,0,0" VerticalAlignment="Top" Click="BackBTN" />
-        <TextBlock HorizontalAlignment="Left" Margin="138,23,0,0" TextWrapping="Wrap" Text="Necrons" VerticalAlignment="Top" Height="63" Width="202" Name="FnBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
-        <Label Content="Faction name:" HorizontalAlignment="Left" Margin="36,18,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="188,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FgBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
-        <Label Content="Faction Government:" HorizontalAlignment="Left" Margin="36,86,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="178,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FcBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
-        <Label Content="Faction Currency:" HorizontalAlignment="Left" Margin="45,160,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="169,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FlBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
-        <Label Content="Faction Leaders:" HorizontalAlignment="Left" Margin="45,229,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="185,458,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FaBLk" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
-        <Label Content="Faction language:" HorizontalAlignment="Left" Margin="52,453,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="177,380,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FdtyBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
-        <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="63,377,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,302,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="63" Width="202" Name="FrBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
-        <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="56,297,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Label Content="Faction name:" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="Necrons" Margin="90,-20,0,30" Height="85" Width="670" x:Name="FnBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+            <Label Content="Faction Government:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="145,-20,0,30" Height="85" Width="650" x:Name="FgBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+            <Label Content="Faction Currency:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="120,-20,0,30" Height="85" Width="660" x:Name="FcBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+            <Label Content="Faction Leaders:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="120,-20,0,30" Height="85" Width="670" x:Name="FlBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+            <Label Content="Faction language:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="120,-20,0,30" Height="85" Width="670" x:Name="FaBLk" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+            <Label Content="Faction deities:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="100,-20,0,30" Height="85" Width="670" x:Name="FdtyBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+            <Label Content="Faction religion:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" Foreground="White"/>
+            <TextBlock TextWrapping="Wrap" Text="" Margin="110,-20,0,30" Height="85" Width="670" x:Name="FrBLK" FontFamily="Copperplate Gothic Light" Foreground="#22bb22"/>
+        </StackPanel>
 
-        <Image Height="100" Width="150" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec1.jpeg" Margin= "400,-450,0,0"/>
+
+
+        <!--<Image Height="100" Width="150" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec1.jpeg" Margin= "400,-450,0,0"/>
         <Image Height="135" Width="200" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec2.jpeg" Margin="400,330,0,0"/>
         <Image Height="100" Width="150" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec3.jpeg" Margin= "400,40,0,0"/>
-        <Image Height="100" Width="150" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec4.jpeg" Margin= "400,-200,0,0"/>
+        <Image Height="100" Width="150" Source="\pages\VariationPages\pagesImages\warhammer40k\necrons\nec4.jpeg" Margin= "400,-200,0,0"/>-->
 
     </Grid>
 </Window>

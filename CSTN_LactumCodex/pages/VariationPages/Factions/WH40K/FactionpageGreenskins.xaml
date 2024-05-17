@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages.Factions"
         xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif" x:Class="CSTN_LactumCodex.pages.VariationPages.Factions.FactionpageGreenskins"
         mc:Ignorable="d"
-        Title="FactionpageGreenskins" Height="1000" Width="1600">
+        Title="FactionpageGreenskins" Height="1000" Width="1600" >
     <Grid Background="#002714">
         <Grid.RowDefinitions>
             <RowDefinition Height="850"/>
@@ -62,9 +62,8 @@
                         <Setter Property="CornerRadius" Value="7"/>
                     </Style>
                 </Button.Resources>
-
-
             </Button>
+            
             <Button Width="120" Height="25" Margin="0,-65,20,0" Content="sample sounds" VerticalAlignment="Top" HorizontalAlignment="right" FontFamily="Copperplate Gothic Light" FontSize="13" Foreground="#bb2324" Background="DarkGray">
                 <Button.Resources>
                     <Style TargetType="Border">
