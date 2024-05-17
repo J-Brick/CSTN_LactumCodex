@@ -10,7 +10,7 @@
         <Grid>
                       
             <Image Name="ProfPicture" Source="\pages\VariationPages\pagesImages\placeholder\placeHolderImg.jpeg" HorizontalAlignment="Left" Height="100" Width="100" Margin="10,10,0,0" VerticalAlignment="Top"/>
-            <Label Name="UsernameBX"  Content="" HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top"/>
+            <Label Name="UsernameBX"  Content="" HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top" Foreground="#ffffff"/>
             <ComboBox Name="favFaction" Text="" HorizontalAlignment="Left" Margin="90,120,0,0" VerticalAlignment="Top" Width="100" Foreground="#505050">
 
                 <ComboBoxItem Content="Imperium of man"/>
