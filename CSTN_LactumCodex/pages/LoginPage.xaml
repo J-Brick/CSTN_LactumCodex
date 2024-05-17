@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages"
         mc:Ignorable="d"
-        Title="LoginPage" Height="450" Width="800" >
+        Title="LoginPage" Height="1000" Width="1600"
+        WindowStartupLocation="CenterScreen" >
 
     <Grid Background="#303030"  >
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="350"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="850"/>
+            <RowDefinition Height="150"/>
         </Grid.RowDefinitions>
 
         <Border Grid.RowSpan="2">
@@ -27,14 +28,16 @@
 
         <StackPanel Grid.Row="0">
 
+            <Image Source="\pages\VariationPages\pagesImages\placeholder\WebAppLogo.png" Height="320" />
+
             <Label Content="Username" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.0,0.0" FontFamily="Agency FB" FontSize="20" Foreground="White"/>
-            <TextBox Name="UsernameIPB" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Margin="0,5,0,0" FontFamily="Agency FB" Background="DimGray" Foreground="#0207ff"/>
+            <TextBox Name="UsernameIPB" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="250" FontSize="25" Margin="0,5,0,0" FontFamily="Agency FB" Background="DimGray" Foreground="#ffffff"/>
 
             <Label Content="password" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.42,0.0" FontFamily="Agency FB" FontSize="20"  Foreground="White"/>
-            <TextBox Name="PasswordIPB" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" FontFamily="Agency FB" Background="DimGray" Foreground="#0207ff"/>
+            <TextBox Name="PasswordIPB" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30"  Width="250" FontSize="25" FontFamily="Agency FB" Background="DimGray" Foreground="#ffffff"/>
 
             <Label Content="Email" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.0,0.0" FontFamily="Agency FB" FontSize="20" Foreground="White"/>
-            <TextBox x:Name="EmailIPB" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Margin="0,0,0,0" FontFamily="Agency FB" Background="DimGray" Foreground="#0207ff"/>
+            <TextBox x:Name="EmailIPB" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30"  Width="250" FontSize="25" Margin="0,0,0,0" FontFamily="Agency FB" Background="DimGray" Foreground="#ffffff"/>
 
             <Button Content="Log-in" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,25,0,0" Click="LoginBTNsubmit_Click" FontFamily="Agency FB" FontSize="20" Foreground="#0207ff" Background="DarkGray" Width="65">
                 <Button.Resources>

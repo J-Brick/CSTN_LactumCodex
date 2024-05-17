@@ -5,16 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages"
         mc:Ignorable="d"
-        Title="MainSelection" Height="450" Width="1000" ResizeMode="CanResize" MinHeight="450" MinWidth="1000">
+        Title="MainSelection" Height="1000" Width="1600"
+        WindowStartupLocation="CenterScreen" ResizeMode="CanResize" MinHeight="450" MinWidth="1000">
     <Grid Background="#303030" Width="auto" Height="auto">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="400"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="900"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="350"/>
             <ColumnDefinition Width="650"/>
+            <ColumnDefinition Width="950"/>
 
         </Grid.ColumnDefinitions>
 
@@ -30,7 +31,7 @@
         </Border>
 
         <StackPanel Grid.Row="0" Grid.Column="0" Height="auto" Width="auto">
-            <Button Name="profile" Grid.Row="0" Content="Profile" Click="ToProfile" HorizontalAlignment="Stretch" Height="25" MinHeight="25" MinWidth="55" Width="55" Margin="-250,10,0,0" VerticalAlignment="Stretch" Foreground="#8888dd" FontFamily="High Tower Text" FontSize="15" >
+            <Button Name="profile" Grid.Row="0" Content="Profile" Click="ToProfile" HorizontalAlignment="Left" Height="25" MinHeight="25" MinWidth="55" Width="55" Margin="10,10,0,0" VerticalAlignment="Stretch" Foreground="#8888dd" FontFamily="High Tower Text" FontSize="15" >
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
@@ -38,11 +39,11 @@
                 </Button.Resources>
 
             </Button>
-            <Label Name="UsernameLabel" Grid.Row="0" HorizontalAlignment="Stretch" Margin="-150,-25,0,0" Width="20" MinWidth="20" Height="20" MinHeight="20" VerticalAlignment="Stretch" Foreground="#8888dd" FontFamily="High Tower Text"/>
+            <Label Name="UsernameLabel" Grid.Row="0" HorizontalAlignment="Left" Margin="100,-25,0,0" Width="20" MinWidth="20" Height="20" MinHeight="20" VerticalAlignment="Stretch" Foreground="#8888dd" FontFamily="High Tower Text"/>
         </StackPanel>
 
         <StackPanel Grid.Column="0" Grid.Row="1" Height="auto" Width="auto" Margin="0,0,0,10">
-            <Button Click="InfoPagesBTN" Content="Information/Lore Pages" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="40,85,0,0" VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Height="25" MinHeight="25" MinWidth="185" Width="185">
+            <Button Click="InfoPagesBTN" Content="Information/Lore Pages" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="340,285,0,0" VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Height="25" MinHeight="25" MinWidth="185" Width="185">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
@@ -50,7 +51,7 @@
                 </Button.Resources>
             </Button>
 
-            <Button Click="ChatBTN" Content="Chat Room" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="40,85,0,0" VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Height="25" MinHeight="25" MinWidth="100" Width="100">
+            <Button Click="ChatBTN" Content="Chat Room" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="340,85,0,0" VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Height="25" MinHeight="25" MinWidth="100" Width="100">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
@@ -58,7 +59,7 @@
                 </Button.Resources>
             </Button>
 
-            <Button Content="Game Listing" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="40,85,0,0" VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Height="25" MinHeight="25" MinWidth="120" Width="120">
+            <Button Content="Game Listing" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="340,85,0,0" VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Height="25" MinHeight="25" MinWidth="120" Width="120">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
@@ -70,14 +71,17 @@
 
         <StackPanel Grid.Row="1" Grid.Column="1" Width="auto" Height="auto" Margin="0,0,0,10">
 
-            <TextBlock HorizontalAlignment="Stretch" Margin="100,60,0,0" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="Information pages: similar to websites, this part of the codex can tell you just about anything you need/want to know about a factions, specific characters, and even the gods of warhammers" 
+            <TextBlock HorizontalAlignment="Stretch" Margin="-100,260,0,0" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="Information pages: similar to websites, this part of the codex can tell you just about anything you need/want to know about a factions, specific characters, and even the gods of warhammers" 
   VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#8888dd" Height="75" MinHeight="75" MinWidth="360" Width="360"/>
 
-            <TextBlock HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="100,60,0,0" TextWrapping="Wrap" Text="Chat Room: this is an are for any/all warhammer fans and enthusists to talk and chat with Each Other" 
+            <TextBlock HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="-100,60,0,0" TextWrapping="Wrap" Text="Chat Room: this is an are for any/all warhammer fans and enthusists to talk and chat with Each Other" 
   VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#8888dd" MinWidth="369" Width="369" MinHeight="35" Height="35" />
 
-            <TextBlock HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="100,60,0,0" TextWrapping="Wrap" Text="Game Listing: this is the area of the codex where you can go to see where you can buy warhammer games, along with the listed pricing for each of them" 
+            <TextBlock HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="-100,60,0,0" TextWrapping="Wrap" Text="Game Listing: this is the area of the codex where you can go to see where you can buy warhammer games, along with the listed pricing for each of them" 
   VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#8888dd" Width="350" MinWidth="350" MinHeight="55" Height="55"/>
+
+            <Image Source="\pages\VariationPages\pagesImages\placeholder\WebAppLogo.png" Height="190" Width="202" HorizontalAlignment="Right" Margin="0,140,10,0" />
+
         </StackPanel>
 
     </Grid>

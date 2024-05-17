@@ -87,13 +87,13 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
             infoShow();
         }
 
-        int i = 1; 
+        int i = 1;
 
         private void Prev_Photo(object sender, RoutedEventArgs e)
         {
             i--;
 
-            if (i < 1 )
+            if (i < 1)
             {
                 i = 4;
             }
@@ -104,7 +104,7 @@ namespace CSTN_LactumCodex.pages.VariationPages.Factions
         {
             i++;
 
-            if (i > 4 )
+            if (i > 4)
             {
                 i = 1;
             }

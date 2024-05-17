@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSTN_LactumCodex.pages"
         mc:Ignorable="d"
-        Title="SignUpPage" Height="450" Width="800">
+        Title="SignUpPage" Height="1000" Width="1600"
+        WindowStartupLocation="CenterScreen" >
     <Grid Background="#303030">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="350"/>
+            <RowDefinition Height="900"/>
             <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
@@ -27,16 +28,17 @@
         </Border>
 
         <StackPanel Grid.Row="0">
-            <TextBlock HorizontalAlignment="Left" Margin="280,50,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" FontFamily="Agency FB" Foreground="White"/>
-            <TextBox Name="userUsername" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="DimGray" Foreground="#0207ff" CaretBrush="White" />
-            <TextBlock HorizontalAlignment="Left" Margin="280,10,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontFamily="Agency FB" Foreground="White"/>
-            <TextBox Name="userPassword" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="DimGray" Foreground="#0207ff"/>
-            <TextBlock HorizontalAlignment="Left" Margin="280,10,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" FontFamily="Agency FB" Foreground="White"/>
-            <TextBox Name="userEmail" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="DimGray" Foreground="#0207ff"/>
-            <TextBlock HorizontalAlignment="Left" Margin="280,10,0,0" TextWrapping="Wrap" Text="First name" VerticalAlignment="Top" FontFamily="Agency FB" Foreground="White"/>
-            <TextBox Name="userFname" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="DimGray" Foreground="#0207ff"/>
-            <TextBlock HorizontalAlignment="Left" Margin="280,10,0,0" TextWrapping="Wrap" Text="Last name" VerticalAlignment="Top" FontFamily="Agency FB" Foreground="White"/>
-            <TextBox Name="userLname" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Viner Hand ITC" Background="DimGray" Foreground="#0207ff"/>
+            <Image Source="\pages\VariationPages\pagesImages\placeholder\WebAppLogo.png" Height="320" />
+            <TextBlock HorizontalAlignment="Left" Margin="525,0,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" FontSize="26" Height="30" Width="180" Foreground="White"/>
+            <TextBox Name="userUsername" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="250" FontSize="25" FontFamily="Agency FB" Background="DimGray" Foreground="#ffffff" CaretBrush="White" />
+            <TextBlock HorizontalAlignment="Left" Margin="520,10,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" FontSize="26" Height="30" Width="180" Foreground="White"/>
+            <TextBox Name="userPassword" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="250" FontSize="25" FontFamily="Agency FB" Background="DimGray" Foreground="#ffffff" CaretBrush="White" />
+            <TextBlock HorizontalAlignment="Left" Margin="585,10,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" FontSize="26" Height="30" Width="100" Foreground="White"/>
+            <TextBox Name="userEmail" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="250" FontSize="25" FontFamily="Agency FB" Background="DimGray" Foreground="#ffffff" CaretBrush="White" />
+            <TextBlock HorizontalAlignment="Left" Margin="515,10,0,0" TextWrapping="Wrap" Text="First name:" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" FontSize="26" Height="30" Width="180" Foreground="White"/>
+            <TextBox Name="userFname" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="250" FontSize="25" FontFamily="Agency FB" Background="DimGray" Foreground="#ffffff" CaretBrush="White" />
+            <TextBlock HorizontalAlignment="Left" Margin="525,10,0,0" TextWrapping="Wrap" Text="Last name:" VerticalAlignment="Top" FontFamily="Copperplate Gothic Light" FontSize="26" Height="30" Width="190" Foreground="White"/>
+            <TextBox Name="userLname" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="30" Width="250" FontSize="25" FontFamily="Agency FB" Background="DimGray" Foreground="#ffffff" CaretBrush="White" />
             <Button Content="Create Account" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Click="Acc_Create" FontFamily="Agency FB" FontSize="15" Foreground="#0207ff" Background="DarkGray"  Width="135">
                 <Button.Resources>
                     <Style TargetType="Border">
