@@ -1,4 +1,5 @@
 ﻿using CSTN_LactumCodex.pages;
+using CSTN_LactumCodex.pages.VariationPages;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,7 +18,7 @@ namespace CSTN_LactumCodex
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        Warning_Page wp = new Warning_Page();
         public MainWindow()
         {
             InitializeComponent();
@@ -25,8 +26,8 @@ namespace CSTN_LactumCodex
 
         private void LGNButton_Click(object sender, RoutedEventArgs e)
         {
-           LoginPage Login = new LoginPage();
-            Login.Show();
+
+            wp.Show();
             this.Close();
            //Login.Userlog = false;
 
@@ -34,15 +35,15 @@ namespace CSTN_LactumCodex
 
         private void OCButton_Click(object sender, RoutedEventArgs e)
         {
-             MainSelection MS = new MainSelection();
-            MS.Show();
+    
+            wp.Show();
             this.Hide();
         }
 
         private void SgnpButton_Click(object sender, RoutedEventArgs e)
         {
-            SignUpPage SUP = new SignUpPage();
-            SUP.Show();
+
+            wp.Show();
             this.Hide();
         }
     }

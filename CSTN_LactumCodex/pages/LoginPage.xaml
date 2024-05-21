@@ -51,7 +51,7 @@
         
         <StackPanel Grid.Row="1">
             <TextBlock Name="Checkbox" HorizontalAlignment="Left" Margin="20,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
-            <Button Content="Back" Click="back_page" HorizontalAlignment="Right" Margin="0,-30,0,0" VerticalAlignment="Bottom" FontFamily="Agency FB" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="50">
+            <Button Content="Back" Click="back_page" HorizontalAlignment="Right" Margin="0,-30,20,0" VerticalAlignment="Bottom" FontFamily="Agency FB" FontSize="15" Foreground="#0207ff" Background="DarkGray" Width="50">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>

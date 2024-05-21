@@ -1,4 +1,5 @@
 ﻿using CSTN_LactumCodex.pages.chatArea;
+using CSTN_LactumCodex.pages.VariationPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -75,6 +76,14 @@ namespace CSTN_LactumCodex.pages
                 PFP.Show();
 
             }
+        }
+
+        private void sampleSounds(object sender, RoutedEventArgs e)
+        {
+            SoundSampler ss = new SoundSampler();
+            this.Hide();
+            ss.Show();
+
         }
     }
 }

@@ -1,0 +1,62 @@
+﻿<Window x:Class="CSTN_LactumCodex.pages.VariationPages.SoundSampler"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSTN_LactumCodex.pages.VariationPages"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="SoundSampler" Height="450" Width="800">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800"/>
+        </Grid.ColumnDefinitions>
+        
+        <Border Grid.ColumnSpan="2" Margin="2,0,-2,0">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,2" EndPoint="1.4,1">
+
+                    <GradientStop Color="#202020" Offset="0.3"/>
+                    <GradientStop Color="#4166F5" Offset="3"/>
+
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+        <StackPanel Grid.Column="0">
+
+            
+            <Button Height="30" Width="100" Margin="0,100,0,0" Content="orks" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Click="PlayORKS" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+
+            <Button Height="30" Width="100" Margin="0,50,0,0" Content="Imperium" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Click="PlayIMP" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+
+            <Button Height="30" Width="100" Margin="0,150,50,0" Content="Back" HorizontalAlignment="Right" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Click="BackBTN" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+
+        </StackPanel>
+        
+
+        
+        
+    </Grid>
+</Window>

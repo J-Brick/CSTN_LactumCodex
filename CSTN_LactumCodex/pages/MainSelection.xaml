@@ -59,7 +59,7 @@
                 </Button.Resources>
             </Button>
 
-            <Button Content="Game Listing" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="340,85,0,0" VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Height="25" MinHeight="25" MinWidth="120" Width="120">
+            <Button Content="Sound Sampler" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="340,85,0,0" VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#0207ff" Background="DarkGray" Height="25" MinHeight="25" MinWidth="120" Width="120" Click="sampleSounds" >
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="7"/>
@@ -77,8 +77,7 @@
             <TextBlock HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="-100,60,0,0" TextWrapping="Wrap" Text="Chat Room: this is an are for any/all warhammer fans and enthusists to talk and chat with Each Other" 
   VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#8888dd" MinWidth="369" Width="369" MinHeight="35" Height="35" />
 
-            <TextBlock HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="-100,60,0,0" TextWrapping="Wrap" Text="Game Listing: this is the area of the codex where you can go to see where you can buy warhammer games, along with the listed pricing for each of them" 
-  VerticalAlignment="Stretch" FontFamily="High Tower Text" FontSize="15" Foreground="#8888dd" Width="350" MinWidth="350" MinHeight="55" Height="55"/>
+            <TextBlock HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="-100,60,0,0" TextWrapping="Wrap" Text="Sound sampler: this is the area of the codex where you can open to hear what factions sound like what. this area allows you to hear accurate represetationo noises of them" FontFamily="High Tower Text" FontSize="15" Foreground="#8888dd" Width="350" MinWidth="350" MinHeight="55" Height="75"/>
 
             <Image Source="\pages\VariationPages\pagesImages\placeholder\WebAppLogo.png" Height="190" Width="202" HorizontalAlignment="Right" Margin="0,140,10,0" />
 

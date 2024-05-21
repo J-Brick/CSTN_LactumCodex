@@ -68,16 +68,18 @@ namespace CSTN_LactumCodex.pages
         {
 /*            HB.Add("@profSource", ProfPicture.Source);*/
             HB.Add("@userName", UsernameBX.Content);
-            HB.Add("@userFavFact", favFaction.Text);
-            query1 = "update UserProfImg set UserName = @userName, FavFaction = @userFavFact";
-            /* UserProfImg = @profSource*/
-            query2 = "update AccountDetailTable set UserName = @userName";
+            query1 = "update UserProfImg set UserName = @userName,";
+            /* UserProfImg = @profSource, FavFaction = @userFavFact,HB.Add("@userFavFact", favFaction.Text);*/
+            query2 = "update AccountDetailTable set UserName = @userName where UserName = @userName";
             DataTab = ExDB.GetDataTable("CapstoneDBs", HB, query1);
             DataTab = ExDB.GetDataTable("CapstoneDBs", HB, query2);
         }
 
         private void Change_Click(object sender, RoutedEventArgs e)
         {
+            UsernameChanger uc = new UsernameChanger();
+                this.Hide();
+                uc.Show();
 
         }
     }
